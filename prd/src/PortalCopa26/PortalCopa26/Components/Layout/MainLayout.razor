@@ -1,0 +1,66 @@
+@inherits LayoutComponentBase
+@inject NavigationManager Nav
+
+<header>
+    <div class="wrap nav">
+        <a href="@(IsHome ? "#top" : "/")" class="brand">
+            <span class="cup"><img src="@PortalCopa26.Data.Seed.DadosCopa.LogoFifaUrl" alt="FIFA" /></span>
+            Portal <b>Copa26</b>
+        </a>
+        <nav class="menu">
+            <a href="@(IsHome ? "#top" : "/")" class="@(IsHome ? "active" : null)">Home</a>
+            <a href="jogos" class="@(IsJogos ? "active" : null)">Jogos</a>
+            <a href="grupos" class="@(IsGrupos ? "active" : null)">Grupos</a>
+            <a href="equipes" class="@(IsSelecoes ? "active" : null)">Seleções</a>
+            <a href="ranking" class="@(IsRanking ? "active" : null)">Ranking</a>
+            <a href="simulador" class="@(IsSimulador ? "active" : null)">Simulador</a>
+        </nav>
+        <div class="badge-fifa">
+            <span class="badge-ball">⚽</span>
+            <span class="badge-text">FIFA 2026</span>
+        </div>
+    </div>
+</header>
+
+<main class="wrap">
+    @Body
+</main>
+
+<footer>
+    <div class="wrap foot">
+        <span>Portal Copa26 · Copa do Mundo FIFA 2026 · USA · Canadá · México</span>
+        <div class="fmenu">
+            <a href="jogos">Jogos</a>
+            <a href="ranking">Ranking</a>
+            <a href="simulador">Simulador</a>
+        </div>
+    </div>
+</footer>
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
+
+@code {
+    // Estado ativo do menu derivado da rota atual. Recalculado a cada navegação,
+    // pois o @Body muda e dispara OnParametersSet (funciona em SSR e interativo).
+    private bool IsHome;
+    private bool IsJogos;
+    private bool IsGrupos;
+    private bool IsSelecoes;
+    private bool IsRanking;
+    private bool IsSimulador;
+
+    protected override void OnParametersSet()
+    {
+        var path = Nav.ToBaseRelativePath(Nav.Uri).Split('?', '#')[0].TrimEnd('/');
+        IsHome = string.IsNullOrEmpty(path);
+        IsJogos = path.StartsWith("jogos", StringComparison.OrdinalIgnoreCase);
+        IsGrupos = path.StartsWith("grupos", StringComparison.OrdinalIgnoreCase);
+        IsSelecoes = path.StartsWith("equipes", StringComparison.OrdinalIgnoreCase);
+        IsRanking = path.StartsWith("ranking", StringComparison.OrdinalIgnoreCase);
+        IsSimulador = path.StartsWith("simulador", StringComparison.OrdinalIgnoreCase);
+    }
+}

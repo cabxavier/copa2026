@@ -1,0 +1,43 @@
+@inject ILandingPageService Dados
+
+<div class="hero">
+    <div class="hero-grid">
+        <div>
+            <span class="pill"><span class="dot"></span> COPA DO MUNDO FIFA</span>
+            <h2>O Mundo inteiro<br>no seu <span>portal</span></h2>
+            <p>Acompanhe todos os jogos, grupos, seleções e classificação da Copa do Mundo FIFA 2026. Simule resultados e veja como sua seleção chega à final.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="simulador">▶ Abrir Simulador</a>
+                <a class="btn btn-ghost" href="#proximos-jogos">Ver Jogos</a>
+            </div>
+        </div>
+        <div class="trophy">
+            <img class="fifa-logo" src="@PortalCopa26.Data.Seed.DadosCopa.LogoFifaUrl"
+                 alt="Logo da Copa do Mundo FIFA 2026" />
+            <small>FIFA WORLD CUP 2026™</small>
+        </div>
+        <div class="hosts">
+            @foreach (var pais in _paises)
+            {
+                <div class="host">
+                    <img class="fl-img host-fl"
+                         src="@PortalCopa26.Data.Seed.DadosCopa.BandeiraUrl(pais.Codigo)"
+                         alt="Bandeira: @pais.Pais" />
+                    <div>
+                        <b>@pais.Pais</b>
+                        <span>País Sede · @pais.Estadios @(pais.Estadios == 1 ? "estádio" : "estádios")</span>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    private IReadOnlyList<PaisSedeDto> _paises = Array.Empty<PaisSedeDto>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _paises = await Dados.ObterPaisesSedeAsync();
+    }
+}

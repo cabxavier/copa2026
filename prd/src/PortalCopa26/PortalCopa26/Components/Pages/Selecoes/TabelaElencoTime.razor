@@ -1,0 +1,27 @@
+<table class="elenco">
+    <thead>
+        <tr>
+            <th>Jogador</th>
+            <th>Posição</th>
+            <th>Idade</th>
+            <th>Gols</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var jogador in Jogadores)
+        {
+            <tr>
+                <td>@jogador.Nome</td>
+                <td><span class="pos-tag @jogador.PosicaoCss">@jogador.PosicaoSigla</span></td>
+                <td>@jogador.Idade</td>
+                <td class="goals">@jogador.Gols</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    /// <summary>Jogadores convocados da seleção.</summary>
+    [Parameter, EditorRequired]
+    public IReadOnlyList<JogadorDto> Jogadores { get; set; } = Array.Empty<JogadorDto>();
+}

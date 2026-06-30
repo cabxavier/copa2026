@@ -1,0 +1,98 @@
+@* Linha de um jogo da fase de grupos (resultado oficial), no formato `grow` do
+   protótipo: mandante à esquerda, caixa de placar central (dois inputs + ":"),
+   visitante à direita, botão Salvar e data abaixo. A gravação só ocorre por ação
+   explícita (botão), distinta do auto-save do Simulador. *@
+
+<div class="grow">
+    <div class="gt">
+        <img class="fl-img" src="@Jogo.MandanteBandeira" alt="@Jogo.MandanteNome" />
+        <span>@Jogo.MandanteNome</span>
+    </div>
+    <div class="score-box">
+        <input class="score-in" type="number" min="0" max="99" inputmode="numeric"
+               value="@_golsMandante"
+               @oninput="OnMandanteInput"
+               aria-label="Gols de @Jogo.MandanteNome" />
+        <span class="sep">:</span>
+        <input class="score-in" type="number" min="0" max="99" inputmode="numeric"
+               value="@_golsVisitante"
+               @oninput="OnVisitanteInput"
+               aria-label="Gols de @Jogo.VisitanteNome" />
+    </div>
+    <div class="gt r">
+        <span>@Jogo.VisitanteNome</span>
+        <img class="fl-img" src="@Jogo.VisitanteBandeira" alt="@Jogo.VisitanteNome" />
+    </div>
+    <button type="button" class="btn-salvar" @onclick="SalvarAsync">Salvar</button>
+    @if (_salvo)
+    {
+        <span class="saved-tag">✓ salvo</span>
+    }
+    @if (Jogo.Data is DateTime data)
+    {
+        <div class="gdate">@data.ToString("dd/MM · HH:mm", _ptBr)</div>
+    }
+</div>
+
+@implements IDisposable
+
+@code {
+    private static readonly System.Globalization.CultureInfo _ptBr = new("pt-BR");
+    private readonly CancellationTokenSource _cts = new();
+
+    /// <summary>Jogo exibido, com o placar oficial atual (nulo se não informado).</summary>
+    [Parameter, EditorRequired]
+    public SimuladorJogoDto Jogo { get; set; } = default!;
+
+    /// <summary>Emite o jogo com o placar a ser persistido ao acionar Salvar.</summary>
+    [Parameter]
+    public EventCallback<SimuladorJogoDto> ResultadoSalvo { get; set; }
+
+    private int? _golsMandante;
+    private int? _golsVisitante;
+    private bool _salvo;
+
+    protected override void OnParametersSet()
+    {
+        _golsMandante = Jogo.GolsMandante;
+        _golsVisitante = Jogo.GolsVisitante;
+    }
+
+    private void OnMandanteInput(ChangeEventArgs e) => _golsMandante = Normalizar(e.Value?.ToString());
+
+    private void OnVisitanteInput(ChangeEventArgs e) => _golsVisitante = Normalizar(e.Value?.ToString());
+
+    // Aceita apenas inteiros não negativos; demais entradas viram nulo (campo vazio)
+    // e valores fora da faixa são limitados a 0..99.
+    private static int? Normalizar(string? valor)
+    {
+        if (string.IsNullOrWhiteSpace(valor)) return null;
+        if (!int.TryParse(valor, out var n)) return null;
+        return Math.Clamp(n, 0, 99);
+    }
+
+    private async Task SalvarAsync()
+    {
+        await ResultadoSalvo.InvokeAsync(Jogo with
+        {
+            GolsMandante = _golsMandante,
+            GolsVisitante = _golsVisitante
+        });
+
+        // Confirmação visual "✓ salvo", removida após ~1,8s (igual ao protótipo).
+        _salvo = true;
+        StateHasChanged();
+        try
+        {
+            await Task.Delay(1800, _cts.Token);
+            _salvo = false;
+            StateHasChanged();
+        }
+        catch (TaskCanceledException)
+        {
+            // Componente descartado durante a espera (ex.: navegação para fora de /grupos).
+        }
+    }
+
+    public void Dispose() => _cts.Cancel();
+}

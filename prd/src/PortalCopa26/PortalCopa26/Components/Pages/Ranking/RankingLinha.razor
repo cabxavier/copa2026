@@ -1,0 +1,30 @@
+<tr class="@(Item.EhTop3 ? "top" : null)">
+    <td class="rpos">@Item.Posicao</td>
+    <td>
+        <div class="rsel">
+            @if (!string.IsNullOrEmpty(Item.BandeiraUrl))
+            {
+                <img src="@Item.BandeiraUrl" alt="@Item.Selecao"
+                     onerror="this.style.visibility='hidden'" />
+            }
+            <span>@Item.Selecao</span>
+        </div>
+    </td>
+    <td class="pts">
+        <div class="ptswrap">
+            <span class="ptsbar"><i style="width:@(LarguraBarra)%"></i></span>
+            <span class="ptsval">@Item.PontuacaoFormatada</span>
+        </div>
+    </td>
+    <td class="grp"><span class="grptag">GRP @Item.GrupoLetra</span></td>
+</tr>
+
+@code {
+    /// <summary>Item do ranking exibido nesta linha.</summary>
+    [Parameter, EditorRequired]
+    public RankingFifaItemDto Item { get; set; } = default!;
+
+    /// <summary>Largura (%) da barra decorativa de pontuação (apenas estética).</summary>
+    [Parameter]
+    public int LarguraBarra { get; set; } = 100;
+}

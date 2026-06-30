@@ -1,0 +1,24 @@
+<div class="podium">
+    @for (var i = 0; i < Itens.Count; i++)
+    {
+        var item = Itens[i];
+        var ordem = i + 1;
+        <div class="pod @($"p{ordem}")">
+            <div class="medal"><b>@item.Posicao</b></div>
+            @if (!string.IsNullOrEmpty(item.BandeiraUrl))
+            {
+                <img class="flag" src="@item.BandeiraUrl" alt="@item.Selecao"
+                     onerror="this.style.visibility='hidden'" />
+            }
+            <div class="pname">@item.Selecao</div>
+            <span class="pgrp">GRP @item.GrupoLetra</span>
+            <div class="ppts"><b>@item.PontuacaoFormatada</b> pontos</div>
+        </div>
+    }
+</div>
+
+@code {
+    /// <summary>Três primeiras seleções do ranking (ordenadas por posição).</summary>
+    [Parameter, EditorRequired]
+    public IReadOnlyList<RankingFifaItemDto> Itens { get; set; } = Array.Empty<RankingFifaItemDto>();
+}

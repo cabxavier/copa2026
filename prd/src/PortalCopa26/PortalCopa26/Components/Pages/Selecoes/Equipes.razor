@@ -1,0 +1,73 @@
+@page "/equipes"
+@rendermode InteractiveServer
+@inject ISelecaoService Dados
+
+<PageTitle>Portal Copa26 — Seleções</PageTitle>
+
+<section class="page selecoes">
+    <div class="page-head">
+        <div>
+            <h1>Seleções</h1>
+            <p class="sub">Copa do Mundo FIFA 2026 · 48 seleções participantes</p>
+        </div>
+    </div>
+
+    <FiltroTime Grupos="_grupos"
+                TermoChanged="OnTermoChanged"
+                GrupoSelecionadoId="_grupoSelecionadoId"
+                GrupoSelecionadoChanged="OnGrupoChanged" />
+
+    @if (_selecoesFiltradas.Count == 0)
+    {
+        <p class="sub">Nenhuma seleção encontrada.</p>
+    }
+    else
+    {
+        <div class="tgrid">
+            @foreach (var selecao in _selecoesFiltradas)
+            {
+                <CartaoTime Selecao="selecao" OnSelecionar="AbrirModalAsync" />
+            }
+        </div>
+    }
+</section>
+
+<ModalTime Selecao="_detalhe" OnFechar="FecharModal" />
+
+@code {
+    private IReadOnlyList<SelecaoCardDto> _selecoes = Array.Empty<SelecaoCardDto>();
+    private IReadOnlyList<GrupoOpcaoDto> _grupos = Array.Empty<GrupoOpcaoDto>();
+    private string _termo = string.Empty;
+    private int? _grupoSelecionadoId;
+    private SelecaoDetalheDto? _detalhe;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _selecoes = await Dados.ObterSelecoesAsync();
+
+        // Grupos para os chips, derivados das seleções já carregadas (A–L).
+        _grupos = _selecoes
+            .GroupBy(s => new { s.GrupoId, s.GrupoNome })
+            .Select(g => new GrupoOpcaoDto(g.Key.GrupoId, g.Key.GrupoNome))
+            .OrderBy(g => g.Nome, StringComparer.Ordinal)
+            .ToList();
+    }
+
+    private IReadOnlyList<SelecaoCardDto> _selecoesFiltradas =>
+        _selecoes
+            .Where(s => _grupoSelecionadoId is null || s.GrupoId == _grupoSelecionadoId)
+            .Where(s => string.IsNullOrWhiteSpace(_termo)
+                || s.Nome.Contains(_termo.Trim(), StringComparison.InvariantCultureIgnoreCase))
+            .ToList();
+
+    private void OnTermoChanged(string termo) => _termo = termo;
+
+    private void OnGrupoChanged(int? grupoId) => _grupoSelecionadoId = grupoId;
+
+    private async Task AbrirModalAsync(int selecaoId)
+    {
+        _detalhe = await Dados.ObterDetalheAsync(selecaoId);
+    }
+
+    private void FecharModal() => _detalhe = null;
+}

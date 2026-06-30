@@ -1,0 +1,49 @@
+<div class="teamrow">
+    <input type="text"
+           class="search"
+           placeholder="Buscar seleção..."
+           @oninput="OnBuscaInput" />
+
+    <div class="chips">
+        <button type="button"
+                class="chip orange @(GrupoSelecionadoId is null ? "active" : null)"
+                @onclick="() => SelecionarGrupo(null)">
+            Todos
+        </button>
+        @foreach (var grupo in Grupos)
+        {
+            <button type="button"
+                    class="chip orange @(GrupoSelecionadoId == grupo.Id ? "active" : null)"
+                    @onclick="() => SelecionarGrupo(grupo.Id)">
+                @Abreviar(grupo.Nome)
+            </button>
+        }
+    </div>
+</div>
+
+@code {
+    /// <summary>Grupos oferecidos como chips (rótulo "Grp A"…"Grp L").</summary>
+    [Parameter]
+    public IReadOnlyList<GrupoOpcaoDto> Grupos { get; set; } = Array.Empty<GrupoOpcaoDto>();
+
+    /// <summary>Emite o texto de busca a cada digitação.</summary>
+    [Parameter]
+    public EventCallback<string> TermoChanged { get; set; }
+
+    /// <summary>Grupo selecionado (null = todos).</summary>
+    [Parameter]
+    public int? GrupoSelecionadoId { get; set; }
+
+    /// <summary>Emite o grupo selecionado (null para remover o filtro).</summary>
+    [Parameter]
+    public EventCallback<int?> GrupoSelecionadoChanged { get; set; }
+
+    private Task OnBuscaInput(ChangeEventArgs e) =>
+        TermoChanged.InvokeAsync(e.Value?.ToString() ?? string.Empty);
+
+    private Task SelecionarGrupo(int? grupoId) =>
+        GrupoSelecionadoChanged.InvokeAsync(grupoId);
+
+    /// <summary>"Grupo A" → "Grp A" para caber no chip.</summary>
+    private static string Abreviar(string grupoNome) => grupoNome.Replace("Grupo ", "Grp ");
+}

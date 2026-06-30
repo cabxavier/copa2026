@@ -1,0 +1,17 @@
+@inject ILandingPageService Dados
+
+<div class="stats">
+    <div class="stat"><div class="ic">🏆</div><div><div class="n">@_estatisticas.Selecoes</div><div class="l">Seleções</div></div></div>
+    <div class="stat"><div class="ic b">📊</div><div><div class="n">@_estatisticas.Grupos</div><div class="l">Grupos</div></div></div>
+    <div class="stat"><div class="ic g">⚽</div><div><div class="n">@_estatisticas.Jogos</div><div class="l">Jogos</div></div></div>
+    <div class="stat"><div class="ic p">🌎</div><div><div class="n">@_estatisticas.Estadios</div><div class="l">Estádios</div></div></div>
+</div>
+
+@code {
+    private EstatisticasCopaDto _estatisticas = new(0, 0, 0, 0);
+
+    protected override async Task OnInitializedAsync()
+    {
+        _estatisticas = await Dados.ObterEstatisticasAsync();
+    }
+}

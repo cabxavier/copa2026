@@ -1,0 +1,30 @@
+@* Painel de placares do grupo: compõe os 3 jogos do grupo exibido. *@
+
+<div class="panel">
+    <div class="sim-panel-title">@(GrupoNome.ToUpperInvariant()) — PLACARES</div>
+    @if (Jogos.Count == 0)
+    {
+        <p class="sub">Nenhum jogo disponível para este grupo.</p>
+    }
+    else
+    {
+        @foreach (var jogo in Jogos)
+        {
+            <SimuladorJogo Jogo="jogo" PlacarAlterado="PlacarAlterado" />
+        }
+    }
+</div>
+
+@code {
+    /// <summary>Nome do grupo (ex.: "A").</summary>
+    [Parameter, EditorRequired]
+    public string GrupoNome { get; set; } = string.Empty;
+
+    /// <summary>Jogos do grupo com placares simulados.</summary>
+    [Parameter]
+    public IReadOnlyList<SimuladorJogoDto> Jogos { get; set; } = Array.Empty<SimuladorJogoDto>();
+
+    /// <summary>Repassa a alteração de placar de qualquer jogo do grupo.</summary>
+    [Parameter]
+    public EventCallback<SimuladorJogoDto> PlacarAlterado { get; set; }
+}

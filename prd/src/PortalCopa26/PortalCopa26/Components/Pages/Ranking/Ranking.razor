@@ -1,0 +1,47 @@
+@page "/ranking"
+@rendermode InteractiveServer
+@inject IRankingService Dados
+
+<PageTitle>Portal Copa26 — Ranking</PageTitle>
+
+<section class="page">
+    <h1>Ranking</h1>
+    <p class="sub">Ranking FIFA das seleções participantes da Copa do Mundo 2026</p>
+
+    @* O pódio do Top 3 só faz sentido na visão completa; some durante a pesquisa. *@
+    @if (string.IsNullOrWhiteSpace(Filtro))
+    {
+        <RankingTop3 Itens="_top3" />
+    }
+
+    <RankingTabela Itens="_filtrados" MaxPontuacao="_maxPontuacao">
+        <Pesquisa>
+            <RankingPesquisa @bind-Termo="Filtro" />
+        </Pesquisa>
+    </RankingTabela>
+</section>
+
+@code {
+    private IReadOnlyList<RankingFifaItemDto> _ranking = Array.Empty<RankingFifaItemDto>();
+    private decimal _maxPontuacao;
+
+    // Termo de pesquisa, ligado ao RankingPesquisa via two-way binding (@bind-Termo).
+    private string Filtro { get; set; } = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _ranking = await Dados.ObterRankingAsync();
+        _maxPontuacao = _ranking.Count > 0 ? _ranking.Max(r => r.Pontuacao) : 0m;
+    }
+
+    // Três primeiras posições para o pódio.
+    private IReadOnlyList<RankingFifaItemDto> _top3 =>
+        _ranking.Take(3).ToList();
+
+    // Lista filtrada por nome (client-side), preservando a ordem por posição.
+    private IReadOnlyList<RankingFifaItemDto> _filtrados =>
+        _ranking
+            .Where(r => string.IsNullOrWhiteSpace(Filtro)
+                || r.Selecao.Contains(Filtro.Trim(), StringComparison.InvariantCultureIgnoreCase))
+            .ToList();
+}

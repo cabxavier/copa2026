@@ -1,0 +1,122 @@
+@* Tabela de classificação de um grupo: destaque de classificados (1º e 2º),
+   melhor terceiro e eliminados. Compartilhada entre o Simulador (placar simulado)
+   e a página Grupos (placar oficial). Parâmetros opcionais permitem exibir as
+   colunas GP/GC, marcar os eliminados (q3), ocultar a legenda interna, injetar
+   ações no cabeçalho e um rodapé — todos com defaults que preservam o uso
+   original do Simulador. *@
+
+<div class="panel">
+    <div class="panel-head">
+        <h3>@TituloExibido</h3>
+        @if (Acoes is not null)
+        {
+            @Acoes
+        }
+        else if (MostrarLegenda)
+        {
+            <div class="legend" style="margin:0">
+                <span><i style="background:var(--green)"></i>Classifica</span>
+                <span><i style="background:var(--orange)"></i>Wildcard</span>
+            </div>
+        }
+    </div>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>SELEÇÃO</th>
+                    <th class="c">J</th>
+                    <th class="c col-v">V</th>
+                    <th class="c">E</th>
+                    <th class="c col-d">D</th>
+                    @if (MostrarGolsProContra)
+                    {
+                        <th class="c">GP</th>
+                        <th class="c">GC</th>
+                    }
+                    <th class="c">SG</th>
+                    <th class="c">PTS</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var linha in Linhas)
+                {
+                    <tr class="@ClasseLinha(linha.Posicao)">
+                        <td class="rank-pos">@linha.Posicao</td>
+                        <td>
+                            <div class="tname">
+                                <img class="fl-img" src="@linha.Bandeira" alt="@linha.Nome" />
+                                <span>@linha.Nome</span>
+                            </div>
+                        </td>
+                        <td class="c">@linha.J</td>
+                        <td class="c col-v">@linha.V</td>
+                        <td class="c">@linha.E</td>
+                        <td class="c col-d">@linha.D</td>
+                        @if (MostrarGolsProContra)
+                        {
+                            <td class="c">@linha.GolsPro</td>
+                            <td class="c">@linha.GolsContra</td>
+                        }
+                        <td class="c">@FormatarSaldo(linha.Saldo)</td>
+                        <td class="c pts">@linha.Pontos</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @if (Rodape is not null)
+    {
+        @Rodape
+    }
+</div>
+
+@code {
+    /// <summary>Nome do grupo (ex.: "A").</summary>
+    [Parameter, EditorRequired]
+    public string GrupoNome { get; set; } = string.Empty;
+
+    /// <summary>Linhas já ordenadas pela classificação.</summary>
+    [Parameter]
+    public IReadOnlyList<ClassificacaoLinhaDto> Linhas { get; set; } = Array.Empty<ClassificacaoLinhaDto>();
+
+    /// <summary>Texto do título do painel. Default segue o uso do Simulador.</summary>
+    [Parameter]
+    public string? Titulo { get; set; }
+
+    /// <summary>Exibe as colunas GP e GC (gols pró/gols contra). Default: ocultas.</summary>
+    [Parameter]
+    public bool MostrarGolsProContra { get; set; }
+
+    /// <summary>Marca como eliminadas (classe q3) as seleções a partir do 4º lugar. Default: não marca.</summary>
+    [Parameter]
+    public bool MostrarEliminado { get; set; }
+
+    /// <summary>Exibe a legenda interna do painel. Default: exibe (uso do Simulador).</summary>
+    [Parameter]
+    public bool MostrarLegenda { get; set; } = true;
+
+    /// <summary>Conteúdo opcional no cabeçalho (ex.: botão Simular). Substitui a legenda interna.</summary>
+    [Parameter]
+    public RenderFragment? Acoes { get; set; }
+
+    /// <summary>Conteúdo opcional ao final do painel, abaixo da tabela (ex.: legenda completa).</summary>
+    [Parameter]
+    public RenderFragment? Rodape { get; set; }
+
+    private string TituloExibido => string.IsNullOrEmpty(Titulo)
+        ? $"Classificação simulada — {GrupoNome}"
+        : Titulo;
+
+    // 1º e 2º classificam (verde); 3º é candidato a melhor terceiro (laranja);
+    // do 4º em diante, eliminado (cinza) — apenas quando MostrarEliminado.
+    private string? ClasseLinha(int posicao) => posicao switch
+    {
+        1 or 2 => "q1",
+        3 => "q2",
+        _ => MostrarEliminado ? "q3" : null
+    };
+
+    private static string FormatarSaldo(int saldo) => saldo > 0 ? $"+{saldo}" : saldo.ToString();
+}

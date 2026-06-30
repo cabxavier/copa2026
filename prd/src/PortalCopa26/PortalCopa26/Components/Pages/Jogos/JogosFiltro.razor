@@ -1,0 +1,31 @@
+<div class="chips">
+    <button type="button"
+            class="chip orange @(GrupoSelecionadoId is null ? "active" : null)"
+            @onclick="() => Selecionar(null)">
+        Todos
+    </button>
+    @foreach (var grupo in Grupos)
+    {
+        <button type="button"
+                class="chip orange @(GrupoSelecionadoId == grupo.Id ? "active" : null)"
+                @onclick="() => Selecionar(grupo.Id)">
+            @grupo.Nome
+        </button>
+    }
+</div>
+
+@code {
+    /// <summary>Grupos oficiais oferecidos como opções de filtro.</summary>
+    [Parameter]
+    public IReadOnlyList<GrupoOpcaoDto> Grupos { get; set; } = Array.Empty<GrupoOpcaoDto>();
+
+    /// <summary>Grupo atualmente selecionado (null = todos).</summary>
+    [Parameter]
+    public int? GrupoSelecionadoId { get; set; }
+
+    /// <summary>Emite o grupo selecionado (null para remover o filtro).</summary>
+    [Parameter]
+    public EventCallback<int?> GrupoSelecionadoChanged { get; set; }
+
+    private Task Selecionar(int? grupoId) => GrupoSelecionadoChanged.InvokeAsync(grupoId);
+}

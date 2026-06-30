@@ -1,0 +1,28 @@
+Implementar a Funcionalidade Ranking FIFA do PortalCopa26.
+
+Utilize como referência visual e funcional obrigatória:
+
+- O protótipo da página:
+  C:\Users\cesar.xavier\Documents\IA\copa2026\prototipo\ranking.html
+
+Utilize como fonte oficial dos dados:
+- C:\Users\cesar.xavier\Documents\IA\copa2026\prd\fontes\copa2026_ranking_fifa.txt
+
+Objetivos:
+
+- Criar a página Ranking seguindo fielmente o layout, organização, componentes e comportamento definidos no protótipo.
+- Utilizar exclusivamente os dados do arquivo copa2026_ranking_fifa.txt para gerar o Seed do Ranking FIFA.
+- Não inventar seleções, posições, pontuações ou qualquer outro dado que não esteja presente no arquivo de dados.
+- Criar ou atualizar as entidades necessárias.
+- Criar o SeedData do Ranking FIFA.
+- Exibir posição, seleção, pontuação FIFA e grupo.
+- Destacar visualmente as três primeiras posições.
+- As fontes usadas devem ter uma cor clara para dar o contraste com o fundo escuro, conforme o protótipo ranking.html
+- Permitir pesquisar seleções.
+- Utilizar as bandeiras oficiais da FIFA.
+- Implementar a interface utilizando componentes Razor reutilizáveis, evitando concentrar toda a implementação em uma única página.
+- Sempre que fizer sentido, criar componentes específicos para o Top 3, tabela de ranking, pesquisa e linhas da tabela.
+- Seguir a arquitetura simplificada definida no CLAUDE.md.
+- Gerar SPEC.md, PLAN.md e TASKS.md completos.
+
+Nesta etapa gere apenas a specification da mudança. Não implemente nenhum código.

@@ -1,0 +1,21 @@
+Posição Seleção	Pontos
+1	Argentina	1877.72
+2	Espanha	1874.71
+3	França	1870.70
+4	Inglaterra	1828.02
+5	Portugal	1767.85
+6	Brasil	1765.86
+7	Marrocos	1755.10
+8	Holanda	1753.57
+9	Bélgica	1742.24
+10	Alemanha	1735.77
+11	Croácia	1720.07
+12	Itália	1703.37
+13	Uruguai	1702.35
+14	Colômbia	1697.92
+15	México	1685.68
+16	Senegal	1682.54
+17	Estados Unidos	1678.82
+18	Japão	1661.38
+19	Suíça	1652.43
+20	Dinamarca	1620.81

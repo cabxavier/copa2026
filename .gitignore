@@ -1,0 +1,62 @@
+# ==========================================================================
+#  Portal Copa 2026 — .gitignore (.NET 10 / Blazor / EF Core + SQLite)
+# ==========================================================================
+
+# ----- Build outputs -------------------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Dd]ebug/
+[Rr]elease/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+
+# ----- Visual Studio / Rider / VS Code -------------------------------------
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.DotSettings.user
+
+# ----- MSBuild / Roslyn caches ---------------------------------------------
+project.lock.json
+project.fragment.lock.json
+*.binlog
+*.nupkg
+*.snupkg
+.dotnet/
+.tools/
+
+# ----- Banco de dados local (gerado pelo seed em runtime) ------------------
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ----- Segredos / configuração local (NÃO versionar) -----------------------
+appsettings.*.local.json
+secrets.json
+*.pfx
+*.p12
+*.key
+.env
+.env.*
+
+# ----- Cobertura de testes -------------------------------------------------
+[Tt]est[Rr]esult*/
+coverage*.json
+coverage*.xml
+coverage*.info
+*.coverage
+*.coveragexml
+
+# ----- Sistema operacional -------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini

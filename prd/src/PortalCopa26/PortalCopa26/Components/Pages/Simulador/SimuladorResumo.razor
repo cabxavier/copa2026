@@ -1,0 +1,27 @@
+@* Resumo das seleções do grupo exibido (nome, bandeira e ranking). *@
+
+<div class="panel" style="margin-top:20px">
+    <h3 style="font-size:18px;font-weight:700;margin-bottom:6px">Seleções do @GrupoNome</h3>
+    <div class="sub-teams">
+        @foreach (var selecao in Selecoes)
+        {
+            <div class="sub-team">
+                <img class="fl-img" src="@selecao.Bandeira" alt="@selecao.Nome" />
+                <div>
+                    <b>@selecao.Nome</b>
+                    <span>@(selecao.RankingPosicao is int posicao ? $"Ranking #{posicao}" : "Ranking —")</span>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    /// <summary>Nome do grupo (ex.: "A").</summary>
+    [Parameter, EditorRequired]
+    public string GrupoNome { get; set; } = string.Empty;
+
+    /// <summary>Seleções do grupo exibido.</summary>
+    [Parameter]
+    public IReadOnlyList<SelecaoGrupoDto> Selecoes { get; set; } = Array.Empty<SelecaoGrupoDto>();
+}

@@ -1,0 +1,52 @@
+Regras de Negócio da Copa do Mundo 2026
+
+FORMATO GERAL
+- 48 seleções participam do torneio.
+- As seleções são divididas em 12 grupos (A a L) de 4 times cada.
+- São disputadas 104 partidas no total.
+- O torneio ocorre entre 11 de junho e 19 de julho de 2026.
+- Sedes: Estados Unidos, México e Canadá (16 cidades-sede).
+
+POTES E SORTEIO
+- As 48 seleções são distribuídas em 4 potes de 12 times.
+- A divisão dos potes segue o Ranking FIFA de 19/11/2025.
+- Os 3 anfitriões entram no Pote 1 com posição fixa: México (A1), Canadá (B1) e Estados Unidos (D1).
+- As 12 cabeças de chave (Pote 1) são distribuídas uma por grupo.
+- Restrição geográfica: cada grupo pode ter no máximo 1 seleção da mesma confederação, exceto a UEFA, que pode ter até 2 por grupo (por ter mais vagas).
+
+FASE DE GRUPOS
+- Cada seleção joga 3 partidas (todos contra todos dentro do grupo).
+- Pontuação: vitória = 3 pontos, empate = 1 ponto, derrota = 0 ponto.
+- Classificam-se para o mata-mata: os 2 primeiros de cada grupo (24 times) + os 8 melhores terceiros colocados, totalizando 32 seleções.
+
+CRITÉRIOS DE DESEMPATE DENTRO DO GRUPO (em ordem)
+1. Maior número de pontos.
+2. Maior saldo de gols.
+3. Maior número de gols marcados.
+4. Resultado do confronto direto entre as seleções empatadas.
+5. Pontuação de fair play (menos cartões).
+6. Sorteio pela FIFA.
+
+CRITÉRIOS PARA OS 8 MELHORES TERCEIROS (em ordem)
+1. Maior número de pontos.
+2. Maior saldo de gols.
+3. Maior número de gols marcados.
+4. Pontuação de fair play.
+5. Sorteio pela FIFA.
+
+FASE DE MATA-MATA
+- Inicia nos 16-avos de final (Rodada de 32), com 32 seleções.
+- Sequência: 16-avos → oitavas → quartas → semifinais → final.
+- Os perdedores das semifinais disputam o 3º lugar.
+- Em caso de empate no tempo normal, há prorrogação de 2 tempos de 15 minutos.
+- Persistindo o empate após a prorrogação, a decisão é por disputa de pênaltis.
+- Não há empate no mata-mata: toda partida tem um vencedor.
+
+REGRAS DE ESTÁDIOS (requisitos mínimos da FIFA)
+- Grupos, 16-avos, oitavas, quartas e 3º lugar: mínimo de 40 mil lugares.
+- Semifinais: mínimo de 60 mil lugares.
+- Abertura e final: mínimo de 80 mil lugares.
+
+JOGOS DE REFERÊNCIA
+- Jogo de abertura: 11/06/2026, no Estádio Azteca (Cidade do México).
+- Final: 19/07/2026, no MetLife Stadium (Nova York/Nova Jersey).

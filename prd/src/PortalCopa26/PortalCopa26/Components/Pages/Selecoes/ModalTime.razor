@@ -1,0 +1,46 @@
+<div class="modal @(Selecao is not null ? "open" : null)" @onclick="Fechar">
+    @if (Selecao is not null)
+    {
+        <div class="modal-box" @onclick:stopPropagation="true">
+            <div class="modal-head">
+                <span class="fl"><img class="fl-img" src="@Selecao.BandeiraUrl" alt="@Selecao.Nome" /></span>
+                <div>
+                    <h3>@Selecao.Nome</h3>
+                    <p>@Subtitulo</p>
+                </div>
+                <button type="button" class="x" @onclick="Fechar">🗙</button>
+            </div>
+
+            <TabelaElencoTime Jogadores="Selecao.Jogadores" />
+        </div>
+    }
+</div>
+
+@code {
+    /// <summary>Seleção exibida no modal; <c>null</c> mantém o modal fechado.</summary>
+    [Parameter]
+    public SelecaoDetalheDto? Selecao { get; set; }
+
+    /// <summary>Solicita o fechamento do modal (botão ou clique fora da caixa).</summary>
+    [Parameter]
+    public EventCallback OnFechar { get; set; }
+
+    private string Subtitulo
+    {
+        get
+        {
+            if (Selecao is null) return string.Empty;
+
+            var partes = new List<string> { Selecao.GrupoNome };
+            if (!string.IsNullOrWhiteSpace(Selecao.Tecnico))
+            {
+                partes.Add(Selecao.Tecnico!);
+            }
+            partes.Add(Selecao.RankingPosicao is int pos ? $"Ranking FIFA #{pos}" : "Sem ranking");
+
+            return string.Join(" · ", partes);
+        }
+    }
+
+    private Task Fechar() => OnFechar.InvokeAsync();
+}

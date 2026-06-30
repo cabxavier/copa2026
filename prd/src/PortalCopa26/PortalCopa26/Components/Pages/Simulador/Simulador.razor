@@ -1,0 +1,101 @@
+@page "/simulador"
+@rendermode InteractiveServer
+@inject ISimuladorService Dados
+
+<PageTitle>Portal Copa26 — Simulador</PageTitle>
+
+<section class="page">
+    <h1>Simulador</h1>
+    <p class="sub">Informe os placares dos jogos e veja a classificação atualizada em tempo real</p>
+
+    <div class="info-box">
+        <div class="emoji">💡</div>
+        <div>
+            <b>Como usar o simulador</b>
+            <p>
+                Digite os placares nos campos de cada jogo. A classificação do grupo é
+                recalculada automaticamente e salva sozinha. Use <b>Limpar Grupo</b> para
+                zerar os resultados do grupo ou <b>Limpar Tudo</b> para reiniciar toda a simulação.
+            </p>
+        </div>
+    </div>
+
+    <div class="chips" style="align-items:center">
+        @foreach (var grupo in _grupos)
+        {
+            <button type="button"
+                    class="chip orange @(grupo.Id == _grupoSelecionadoId ? "active" : null)"
+                    @onclick="() => SelecionarGrupoAsync(grupo.Id, grupo.Nome)">
+                @grupo.Nome
+            </button>
+        }
+        <span style="flex:1"></span>
+        <button type="button" class="chip" @onclick="LimparGrupoAsync">Limpar Grupo</button>
+        <button type="button" class="chip" @onclick="LimparTudoAsync">Limpar Tudo</button>
+    </div>
+
+    <div class="sim-grid">
+        <SimuladorGrupo GrupoNome="@_grupoNome"
+                        Jogos="_jogos"
+                        PlacarAlterado="OnPlacarAlteradoAsync" />
+        <div>
+            <ClassificacaoGrupo GrupoNome="@_grupoNome" Linhas="_classificacao" />
+            <SimuladorResumo GrupoNome="@_grupoNome" Selecoes="_selecoes" />
+        </div>
+    </div>
+</section>
+
+@code {
+    private IReadOnlyList<GrupoOpcaoDto> _grupos = Array.Empty<GrupoOpcaoDto>();
+    private List<SimuladorJogoDto> _jogos = new();
+    private IReadOnlyList<SelecaoGrupoDto> _selecoes = Array.Empty<SelecaoGrupoDto>();
+    private IReadOnlyList<ClassificacaoLinhaDto> _classificacao = Array.Empty<ClassificacaoLinhaDto>();
+    private int _grupoSelecionadoId;
+    private string _grupoNome = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _grupos = await Dados.ObterGruposAsync();
+        if (_grupos.Count > 0)
+        {
+            // Restaura automaticamente a simulação corrente para o grupo inicial (A).
+            await SelecionarGrupoAsync(_grupos[0].Id, _grupos[0].Nome);
+        }
+    }
+
+    private async Task SelecionarGrupoAsync(int grupoId, string grupoNome)
+    {
+        _grupoSelecionadoId = grupoId;
+        _grupoNome = grupoNome;
+        _jogos = (await Dados.ObterJogosDoGrupoAsync(grupoId)).ToList();
+        _selecoes = await Dados.ObterSelecoesDoGrupoAsync(grupoId);
+        Recalcular();
+    }
+
+    private async Task OnPlacarAlteradoAsync(SimuladorJogoDto jogo)
+    {
+        var indice = _jogos.FindIndex(j => j.JogoId == jogo.JogoId);
+        if (indice >= 0)
+        {
+            _jogos[indice] = jogo;
+        }
+
+        // Recalcula em tempo real e persiste o delta automaticamente (sem salvar manual).
+        Recalcular();
+        await Dados.SalvarPlacarAsync(jogo.JogoId, jogo.GolsMandante, jogo.GolsVisitante);
+    }
+
+    private async Task LimparGrupoAsync()
+    {
+        await Dados.LimparGrupoAsync(_grupoSelecionadoId);
+        await SelecionarGrupoAsync(_grupoSelecionadoId, _grupoNome);
+    }
+
+    private async Task LimparTudoAsync()
+    {
+        await Dados.LimparTudoAsync();
+        await SelecionarGrupoAsync(_grupoSelecionadoId, _grupoNome);
+    }
+
+    private void Recalcular() => _classificacao = CalculadoraClassificacao.Calcular(_jogos);
+}

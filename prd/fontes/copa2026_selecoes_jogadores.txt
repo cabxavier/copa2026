@@ -1,0 +1,1336 @@
+# Algeria (ALG)
+Mastil|26|Goleiro|0
+Mandi|34|Defensor|8
+Abada|27|Defensor|1
+Tougai|26|Defensor|2
+Belaid|27|Defensor|1
+Zerrouki|28|Meio-campista|3
+Mahrez|35|Atacante|40
+Aouar|27|Meio-campista|6
+Gouiri|26|Atacante|11
+Chaibi|23|Meio-campista|3
+Hadj Moussa|24|Atacante|2
+Benbouali|26|Atacante|2
+Hadjam|23|Defensor|3
+Boudaoui|26|Meio-campista|0
+Ait-nouri|25|Defensor|0
+Benbot|31|Goleiro|0
+Belghali|24|Defensor|2
+Amoura|26|Atacante|19
+Bentaleb|31|Meio-campista|6
+Boulbina|23|Atacante|5
+Bensebaini|31|Defensor|9
+Maza|20|Meio-campista|2
+Zidane|28|Goleiro|0
+Titraoui|22|Meio-campista|0
+Ghedjemis|23|Atacante|1
+Chergui|27|Defensor|0
+
+# Argentina (ARG)
+Musso|32|Goleiro|0
+Senesi|29|Defensor|0
+Tagliafico|33|Defensor|1
+Montiel|29|Defensor|2
+Paredes|31|Meio-campista|5
+Martinez|28|Defensor|1
+De Paul|32|Meio-campista|2
+Barco|21|Meio-campista|2
+Alvarez|26|Atacante|14
+Messi|39|Atacante|123
+Lo Celso|30|Meio-campista|5
+Rulli|34|Goleiro|0
+Romero|28|Defensor|3
+Palacios|27|Meio-campista|0
+Gonzalez|28|Meio-campista|6
+Almada|25|Atacante|5
+Simeone|23|Atacante|2
+Paz|21|Atacante|1
+Otamendi|38|Defensor|8
+Mac Allister|27|Meio-campista|6
+Lopez|25|Atacante|0
+Martinez|28|Atacante|38
+Martinez|33|Goleiro|0
+Fernandez|25|Meio-campista|6
+Medina|27|Defensor|0
+Molina|28|Defensor|1
+
+# Australia (AUS)
+Ryan|34|Goleiro|0
+Degenek|32|Defensor|1
+Circati|22|Defensor|1
+Italiano|24|Defensor|0
+Bos|23|Defensor|4
+Geria|33|Defensor|0
+Leckie|35|Atacante|14
+Metcalfe|26|Meio-campista|2
+Toure|22|Atacante|2
+Hrustic|29|Atacante|3
+Mabil|30|Atacante|10
+Izzo|31|Goleiro|0
+Oneill|27|Meio-campista|0
+Devlin|28|Meio-campista|0
+Trewin|25|Defensor|0
+Behich|35|Defensor|3
+Irankunda|20|Atacante|6
+Beach|22|Goleiro|0
+Souttar|27|Defensor|11
+Volpato|22|Atacante|0
+Burgess|30|Defensor|0
+Irvine|33|Meio-campista|14
+Velupillay|25|Atacante|3
+Okon-engstler|21|Meio-campista|0
+Herrington|18|Defensor|0
+Yengi|25|Atacante|1
+
+# Austria (AUT)
+Schlager|30|Goleiro|0
+Affengruber|25|Defensor|0
+Danso|27|Defensor|0
+Schlager|28|Meio-campista|4
+Posch|29|Defensor|5
+Seiwald|25|Meio-campista|1
+Arnautovic|37|Atacante|49
+Alaba|34|Defensor|15
+Sabitzer|32|Meio-campista|27
+Grillitsch|30|Meio-campista|1
+Gregoritsch|32|Atacante|24
+Wiegele|25|Goleiro|0
+Pentz|29|Goleiro|0
+Kalajdzic|28|Atacante|5
+Lienhart|29|Defensor|3
+Mwene|32|Defensor|0
+Chukwuemeka|22|Meio-campista|1
+Schmid|26|Meio-campista|4
+Ljubicic|28|Meio-campista|1
+Laimer|29|Meio-campista|7
+Wimmer|25|Atacante|1
+Prass|25|Meio-campista|0
+Friedl|28|Defensor|0
+Wanner|20|Meio-campista|0
+Svoboda|27|Defensor|0
+Schoepf|32|Meio-campista|6
+
+# Belgium (BEL)
+Courtois|34|Goleiro|0
+Debast|22|Defensor|1
+Theate|26|Defensor|1
+Mechele|33|Defensor|1
+De Cuyper|25|Defensor|4
+Witsel|37|Meio-campista|12
+De Bruyne|35|Meio-campista|38
+Tielemans|29|Meio-campista|13
+Lukaku|33|Atacante|91
+Trossard|31|Atacante|14
+Doku|24|Atacante|7
+Lammens|23|Goleiro|0
+Penders|20|Goleiro|0
+Lukebakio|28|Atacante|6
+Meunier|34|Defensor|10
+De Winter|24|Defensor|0
+De Ketelaere|25|Atacante|6
+Seys|21|Defensor|0
+Moreira|21|Meio-campista|0
+Vanaken|33|Meio-campista|7
+Castagne|30|Defensor|2
+Saelemaekers|27|Meio-campista|3
+Raskin|25|Meio-campista|2
+Onana|24|Meio-campista|1
+Ngoy|23|Defensor|0
+Fernandez-pardo|21|Atacante|0
+
+# Bosnia And Herzegovina (BIH)
+Vasilj|30|Goleiro|0
+Mujakic|28|Defensor|1
+Hadzikadunic|27|Defensor|0
+Muharemovic|23|Defensor|1
+Kolasinac|33|Defensor|0
+Tahirovic|23|Meio-campista|2
+Dedic|23|Defensor|1
+Gigovic|24|Meio-campista|1
+Bazdar|22|Atacante|1
+Demirovic|28|Atacante|4
+Dzeko|40|Atacante|73
+Jurkas|18|Goleiro|0
+Basic|24|Meio-campista|0
+Sunjic|29|Meio-campista|0
+Memic|25|Meio-campista|1
+Hadziahmetovic|29|Meio-campista|0
+Burnic|28|Meio-campista|0
+Katic|29|Defensor|2
+Alajbegovic|18|Atacante|2
+Bajraktarevic|21|Atacante|1
+Radeljic|28|Defensor|0
+Zlomislic|27|Goleiro|0
+Tabakovic|32|Atacante|4
+Malic|20|Defensor|0
+Lukic|27|Atacante|1
+Mahmic|21|Meio-campista|2
+
+# Brazil (BRA)
+Alisson|33|Goleiro|0
+Ederson Silva|26|Meio-campista|0
+Gabriel Magalhaes|28|Defensor|1
+Marquinhos|32|Defensor|7
+Casemiro|34|Meio-campista|9
+Alex Sandro|35|Defensor|2
+Vinicius Junior|25|Atacante|13
+Bruno Guimaraes|28|Meio-campista|3
+Matheus Cunha|27|Atacante|4
+Neymar Jr|34|Atacante|79
+Raphinha|29|Atacante|11
+Weverton|38|Goleiro|0
+Danilo|34|Defensor|1
+Bremer|29|Defensor|1
+Leo Pereira|30|Defensor|0
+Douglas Santos|32|Defensor|0
+Fabinho|32|Meio-campista|0
+Danilo Santos|25|Meio-campista|2
+Endrick|19|Atacante|4
+Lucas Paqueta|28|Meio-campista|13
+Luiz Henrique|25|Atacante|2
+Gabriel Martinelli|25|Atacante|4
+Ederson|32|Goleiro|0
+Roger Ibanez|27|Defensor|0
+Igor Thiago|25|Atacante|2
+Rayan|19|Atacante|1
+
+# Cabo Verde (CPV)
+Vozinha|40|Goleiro|0
+Stopira|38|Defensor|4
+Diney Borges|31|Defensor|2
+Pico Lopes|34|Defensor|0
+Logan Costa|25|Defensor|0
+Kevin Pina|29|Meio-campista|4
+Jovane Cabral|28|Meio-campista|3
+Joao Paulo|28|Meio-campista|1
+Gilson Benchimol|24|Atacante|6
+Jamiro Monteiro|32|Meio-campista|5
+Garry Rodrigues|35|Meio-campista|10
+Marcio Rosa|29|Goleiro|0
+Sidny Lopes Cabral|23|Defensor|3
+Deroy Duarte|26|Meio-campista|0
+Laros Duarte|29|Meio-campista|1
+Yannick Semedo|30|Meio-campista|1
+Willy Semedo|32|Meio-campista|3
+Telmo Arcanjo|25|Meio-campista|1
+Dailon Livramento|25|Atacante|7
+Ryan Mendes|36|Atacante|22
+Nuno Da Costa|35|Meio-campista|2
+Steven Moreira|31|Defensor|0
+Cj Dos Santos|25|Goleiro|0
+Wagner Pina|23|Defensor|0
+Kelvin Pires|26|Defensor|1
+Helio Varela|24|Meio-campista|1
+
+# Canada (CAN)
+St. Clair|29|Goleiro|0
+Johnston|27|Defensor|1
+Jones|28|Defensor|0
+De Fougerolles|20|Defensor|0
+Waterman|30|Defensor|0
+Choiniere|27|Meio-campista|0
+Eustaquio|29|Meio-campista|5
+Kone|24|Meio-campista|4
+Larin|31|Atacante|32
+David|26|Atacante|42
+Millar|26|Meio-campista|1
+Oluwaseyi|26|Atacante|2
+Cornelius|28|Defensor|1
+Shaffelburg|26|Meio-campista|6
+Bombito|26|Defensor|0
+Crepeau|32|Goleiro|0
+Buchanan|27|Atacante|8
+Goodman|22|Goleiro|0
+Davies|25|Defensor|15
+Ahmed|25|Atacante|1
+Osorio|34|Meio-campista|10
+Laryea|31|Defensor|1
+Sigur|22|Defensor|2
+David|24|Atacante|4
+Saliba|22|Meio-campista|3
+Nelson|23|Atacante|3
+
+# Colombia (COL)
+Ospina|37|Goleiro|0
+Munoz|30|Defensor|5
+Lucumi|28|Defensor|1
+Arias|34|Defensor|0
+Castano|25|Meio-campista|0
+Rios|26|Meio-campista|2
+Diaz|29|Atacante|23
+Carrascal|28|Meio-campista|2
+Cordoba|33|Atacante|6
+Rodriguez|34|Meio-campista|31
+Arias|28|Meio-campista|6
+Vargas|37|Goleiro|0
+Mina|31|Defensor|8
+Puerta|22|Defensor|1
+Portilla|27|Meio-campista|0
+Lerma|31|Meio-campista|5
+Mojica|33|Defensor|1
+Ditta|28|Defensor|0
+Hernandez|27|Atacante|2
+Quintero|33|Meio-campista|6
+Campaz|26|Atacante|2
+Machado|32|Defensor|0
+Sanchez|30|Defensor|4
+Montero|31|Goleiro|0
+Suarez|28|Atacante|5
+Gomez|23|Atacante|2
+
+# Congo DR (COD)
+Mpasi|31|Goleiro|0
+Wan-bissaka|28|Defensor|0
+Kapuadi|28|Defensor|0
+Tuanzebe|28|Defensor|1
+Batubinsika|30|Defensor|1
+Mukau|21|Meio-campista|0
+Mbuku|24|Meio-campista|2
+Moutoussamy|29|Meio-campista|0
+Cipenga|28|Atacante|0
+Bongonda|30|Meio-campista|7
+Kakuta|35|Atacante|5
+Kayembe|31|Defensor|1
+Elia|28|Atacante|12
+Sadiki|21|Meio-campista|0
+Tshibola|31|Meio-campista|1
+Fayulu|26|Goleiro|0
+Bakambu|35|Atacante|21
+Pickel|29|Meio-campista|1
+Mayele|32|Atacante|6
+Wissa|29|Atacante|11
+Epolo|21|Goleiro|0
+Mbemba|31|Defensor|7
+Banza|29|Atacante|2
+Kalulu|28|Defensor|0
+Kayembe|28|Meio-campista|2
+Masuaku|32|Defensor|4
+
+# Côte D'Ivoire (CIV)
+Fofana|25|Goleiro|0
+Diomande|22|Defensor|1
+Konan|30|Defensor|0
+Seri|34|Meio-campista|4
+Singo|25|Defensor|1
+Fofana|31|Meio-campista|7
+Kossounou|25|Defensor|0
+Kessie|29|Meio-campista|16
+Bonny|22|Atacante|0
+Adingra|24|Atacante|5
+Diomande|19|Atacante|3
+Wahi|23|Atacante|0
+Operi|29|Defensor|0
+Diakite|22|Atacante|6
+Diallo|23|Atacante|7
+Kone|24|Goleiro|0
+Doue|23|Defensor|3
+Sangare|28|Meio-campista|11
+Pepe|31|Atacante|14
+Agbadou|29|Defensor|2
+Ndicka|26|Defensor|0
+Guessand|24|Atacante|4
+Lafont|27|Goleiro|0
+Toure|20|Atacante|2
+Guiagon|25|Meio-campista|0
+Oulai|20|Meio-campista|0
+
+# Croatia (CRO)
+Livakovic|31|Goleiro|0
+Stanisic|26|Defensor|0
+Pongracic|28|Defensor|0
+Gvardiol|24|Defensor|4
+Caleta-car|29|Defensor|1
+Sutalo|26|Defensor|0
+Moro|28|Meio-campista|0
+Kovacic|32|Meio-campista|5
+Kramaric|35|Atacante|36
+Modric|40|Meio-campista|29
+Budimir|34|Atacante|7
+Pandur|26|Goleiro|0
+Vlasic|28|Meio-campista|11
+Perisic|37|Atacante|38
+Pasalic|31|Meio-campista|12
+Baturina|23|Meio-campista|2
+Sucic|22|Meio-campista|2
+Jakic|29|Defensor|2
+Fruk|25|Meio-campista|1
+Matanovic|23|Atacante|2
+Sucic|23|Meio-campista|1
+Vuskovic|19|Defensor|1
+Kotarski|26|Goleiro|0
+Pasalic|25|Atacante|1
+Erlic|28|Defensor|1
+Musa|28|Atacante|2
+
+# Curaçao (CUW)
+Room|37|Goleiro|0
+Sambo|24|Defensor|0
+Gaari|32|Defensor|1
+Van Eijma|28|Defensor|1
+Floranus|27|Defensor|0
+Roemeratoe|26|Meio-campista|1
+Bacuna|28|Meio-campista|14
+Comenencia|22|Meio-campista|3
+Locadia|32|Atacante|1
+Bacuna|34|Meio-campista|16
+Antonisse|24|Atacante|4
+Hansen|24|Atacante|1
+Noslin|23|Atacante|1
+Gorre|31|Atacante|6
+Martha|22|Meio-campista|2
+Margaritha|26|Atacante|5
+Kuwas|33|Atacante|2
+Obispo|27|Defensor|0
+Kastaneer|30|Atacante|9
+Brenet|32|Defensor|2
+Chong|26|Meio-campista|3
+Felida|26|Meio-campista|1
+Bazoer|29|Defensor|0
+Fonville|23|Defensor|0
+Bodak|24|Goleiro|0
+Doornbusch|26|Goleiro|0
+
+# Czechia (CZE)
+Kovar|26|Goleiro|0
+Zima|25|Defensor|1
+Holes|33|Defensor|2
+Hranac|26|Defensor|1
+Coufal|33|Defensor|2
+Chaloupek|23|Defensor|0
+Krejci|27|Defensor|6
+Darida|35|Meio-campista|8
+Hlozek|23|Atacante|5
+Schick|30|Atacante|26
+Kuchta|29|Atacante|3
+Cerv|25|Meio-campista|2
+Chytil|27|Atacante|6
+Jurasek|25|Defensor|1
+Sulc|25|Atacante|5
+Stanek|30|Goleiro|0
+Provod|29|Meio-campista|3
+Sadilek|27|Meio-campista|2
+Chory|31|Atacante|7
+Zeleny|33|Defensor|0
+Doudera|28|Defensor|2
+Soucek|31|Meio-campista|17
+Hornicek|23|Goleiro|0
+Sojka|23|Meio-campista|0
+Sochurek|18|Meio-campista|0
+Visinsky|23|Atacante|1
+
+# Ecuador (ECU)
+Galindez|39|Goleiro|0
+Torres|29|Defensor|5
+Hincapie|24|Defensor|2
+Ordonez|22|Defensor|0
+Alcivar|26|Meio-campista|1
+Pacho|24|Defensor|2
+Estupinan|28|Defensor|5
+Valencia|22|Meio-campista|1
+Yeboah|26|Atacante|3
+Paez|19|Meio-campista|2
+Rodriguez|26|Atacante|2
+Ramirez|25|Goleiro|0
+Valencia|36|Atacante|49
+Minda|23|Meio-campista|2
+Vite|24|Meio-campista|1
+Caicedo|28|Atacante|4
+Preciado|28|Defensor|0
+Castillo|22|Meio-campista|0
+Plata|25|Atacante|9
+Angulo|23|Atacante|3
+Franco|27|Meio-campista|1
+Valle|30|Goleiro|0
+Caicedo|24|Meio-campista|3
+Arevalo|21|Atacante|0
+Porozo|25|Defensor|1
+Medina|21|Defensor|0
+
+# Egypt (EGY)
+Mohamed Elshenawy|37|Goleiro|0
+Yasser Ibrahim|33|Defensor|1
+Mohamed Hany|30|Defensor|0
+Hossam Abdelmaguid|25|Defensor|0
+Ramy Rabia|33|Defensor|6
+Mohamed Abdelmoneim|27|Defensor|3
+Trezeguet|31|Atacante|24
+Emam Ashour|28|Meio-campista|1
+Hamza Abdelkarim|18|Atacante|0
+Mohamed Salah|34|Atacante|68
+Mostafa Zico|29|Meio-campista|3
+Haissem Hassan|24|Atacante|0
+Ahmed Fatouh|28|Defensor|1
+Hamdy Fathy|31|Meio-campista|4
+Karim Hafez|30|Defensor|0
+Mahdy Soliman|39|Goleiro|0
+Mohanad Lashin|30|Meio-campista|0
+Nabil Donga|30|Meio-campista|0
+Marawan Attia|27|Meio-campista|1
+Ibrahim Adel|25|Atacante|3
+Mahmoud Saber|24|Meio-campista|2
+Omar Marmoush|27|Atacante|11
+Mostafa Shoubir|26|Goleiro|0
+Tarek Alaa|24|Defensor|0
+Zizo|30|Atacante|5
+Mohamed Alaa|27|Goleiro|0
+
+# England (ENG)
+Pickford|32|Goleiro|0
+Konsa|28|Defensor|1
+Oreilly|21|Defensor|0
+Rice|27|Meio-campista|7
+Stones|32|Defensor|3
+Guehi|25|Defensor|1
+Saka|24|Atacante|14
+Anderson|23|Meio-campista|0
+Kane|32|Atacante|82
+Bellingham|22|Meio-campista|8
+Rashford|28|Atacante|19
+Chalobah|26|Defensor|0
+Henderson|29|Goleiro|0
+Henderson|36|Meio-campista|3
+Burn|34|Defensor|0
+Mainoo|21|Meio-campista|0
+Rogers|23|Meio-campista|1
+Gordon|25|Atacante|3
+Watkins|30|Atacante|7
+Madueke|24|Atacante|1
+Eze|27|Meio-campista|3
+Toney|30|Atacante|1
+Trafford|23|Goleiro|0
+James|26|Defensor|1
+Spence|25|Defensor|0
+Quansah|23|Defensor|0
+
+# France (FRA)
+Samba|32|Goleiro|0
+Gusto|23|Defensor|0
+Digne|32|Defensor|0
+Upamecano|27|Defensor|2
+Kounde|27|Defensor|0
+Kone|25|Meio-campista|0
+Dembele|29|Atacante|11
+Tchouameni|26|Meio-campista|3
+Thuram|28|Atacante|3
+Mbappe|27|Atacante|60
+Olise|24|Atacante|7
+Barcola|23|Atacante|4
+Kante|35|Meio-campista|2
+Rabiot|31|Meio-campista|7
+Konate|27|Defensor|0
+Maignan|30|Goleiro|0
+Saliba|25|Defensor|0
+Zaire-emery|20|Meio-campista|1
+Hernandez|28|Defensor|2
+Doue|21|Atacante|3
+Hernandez|30|Defensor|0
+Mateta|29|Atacante|2
+Risser|21|Goleiro|0
+Cherki|22|Meio-campista|2
+Akliouche|24|Meio-campista|1
+Lacroix|26|Defensor|0
+
+# Germany (GER)
+Neuer|40|Goleiro|0
+Ruediger|33|Defensor|3
+Anton|29|Defensor|0
+Tah|30|Defensor|1
+Pavlovic|22|Meio-campista|1
+Kimmich|31|Defensor|10
+Havertz|27|Atacante|24
+Goretzka|31|Meio-campista|15
+Leweling|25|Meio-campista|1
+Musiala|23|Meio-campista|10
+Woltemade|24|Atacante|4
+Baumann|36|Goleiro|0
+Gross|35|Meio-campista|1
+Beier|23|Atacante|0
+Schlotterbeck|26|Defensor|1
+Stiller|25|Meio-campista|0
+Wirtz|23|Meio-campista|11
+Brown|23|Defensor|1
+Sane|30|Meio-campista|18
+Amiri|29|Meio-campista|1
+Nuebel|29|Goleiro|0
+Raum|28|Defensor|1
+Nmecha|25|Meio-campista|2
+Thiaw|24|Defensor|0
+Ouedraogo|20|Meio-campista|1
+Undav|29|Atacante|9
+
+# Ghana (GHA)
+Zigi|29|Goleiro|0
+Seidu|26|Defensor|1
+Yirenkyi|20|Meio-campista|2
+Adjetey|22|Defensor|0
+Partey|33|Meio-campista|16
+Mumin|28|Defensor|0
+Fatawu|22|Atacante|3
+Sibo|28|Meio-campista|0
+Ayew|34|Atacante|34
+Thomas-asante|27|Atacante|1
+Semenyo|26|Meio-campista|3
+Anang|26|Goleiro|0
+Bonsu Baah|21|Atacante|0
+Mensah|27|Defensor|0
+Owusu|28|Meio-campista|0
+Asare|33|Goleiro|0
+Rahman|31|Defensor|1
+Opoku|27|Defensor|1
+Williams|32|Atacante|2
+Boakye|25|Meio-campista|0
+Oppong|22|Defensor|0
+Sulemana|24|Atacante|1
+Luckassen|30|Defensor|1
+Nuamah|22|Atacante|4
+Adu|22|Atacante|0
+Senaya|25|Defensor|0
+
+# Haiti (HAI)
+Placide|38|Goleiro|0
+Arcus|30|Defensor|1
+Thermoncy|20|Defensor|0
+Ade|36|Defensor|2
+Delcroix|27|Defensor|0
+Sainte|23|Meio-campista|0
+Etienne|29|Atacante|8
+Experience|27|Defensor|0
+Nazon|32|Atacante|44
+Bellegarde|28|Meio-campista|0
+Deedson|25|Atacante|10
+Pierre|25|Goleiro|0
+Lacroix|32|Defensor|3
+Metusala|26|Defensor|0
+Providence|24|Atacante|3
+Joseph|25|Atacante|1
+Jean Jacques|26|Meio-campista|6
+Isidor|25|Atacante|3
+Fortune|27|Atacante|0
+Pierrot|31|Atacante|34
+Casimir|24|Atacante|0
+Duverne|28|Defensor|1
+Duverger|26|Goleiro|0
+Paugain|24|Defensor|0
+Simon|25|Meio-campista|0
+Pierre|21|Meio-campista|0
+
+# IR Iran (IRN)
+Beiranvand|33|Goleiro|0
+Hardani|27|Defensor|1
+Hajisafi|36|Defensor|7
+Khalilzadeh|37|Defensor|2
+Mohammadi|32|Defensor|1
+Ezatolahi|29|Meio-campista|2
+Jahanbakhsh|32|Meio-campista|17
+Mohebbi|27|Meio-campista|14
+Taremi|33|Atacante|59
+Ghayedi|27|Atacante|10
+Alipour|30|Atacante|1
+Niazmand|31|Goleiro|0
+Kanani|32|Defensor|6
+Ghoddos|32|Meio-campista|3
+Cheshmi|32|Meio-campista|3
+Torabi|31|Meio-campista|7
+Yousefi|24|Defensor|1
+Hosseinzadeh|25|Atacante|5
+Nemati|30|Defensor|0
+Moghanloo|31|Atacante|2
+Ghorbani|24|Meio-campista|0
+Hosseini|33|Goleiro|0
+Rezaeian|36|Defensor|10
+Dargahi|29|Atacante|0
+Iri|22|Defensor|0
+Razaghinia|20|Meio-campista|0
+
+# Iraq (IRQ)
+Fahad Talib|31|Goleiro|0
+Rebin Sulaka|34|Defensor|1
+Hussein Ali|24|Defensor|1
+Zaid Tahseen|25|Defensor|1
+Akam Hashim|27|Defensor|1
+Munaf Younus|29|Defensor|1
+Youssef Amyn|22|Meio-campista|2
+Ibrahim Bayesh|26|Meio-campista|8
+Ali Alhamadi|24|Atacante|5
+Mohanad Ali|26|Atacante|26
+Ahmed Qasem|22|Atacante|0
+Jalal Hassan|35|Goleiro|0
+Ali Yousif|30|Atacante|1
+Zidane Iqbal|23|Meio-campista|2
+Ahmed Maknazi|24|Defensor|0
+Amir Alammari|28|Meio-campista|3
+Ali Jasim|22|Atacante|2
+Aymen Hussein|30|Atacante|34
+Kevin Yakob|25|Meio-campista|0
+Aimar Sher|23|Meio-campista|0
+Marko Farji|22|Atacante|0
+Ahmed Basil|29|Goleiro|0
+Merchas Doski|26|Defensor|1
+Zaid Ismael|24|Meio-campista|0
+Mustafa Saadoon|25|Defensor|0
+Frans Putros|32|Defensor|0
+
+# Japan (JPN)
+Suzuki|23|Goleiro|0
+Sugawara|26|Defensor|2
+Taniguchi|34|Defensor|1
+Itakura|29|Defensor|3
+Nagatomo|39|Defensor|4
+Machino|26|Atacante|5
+Tanaka|27|Meio-campista|8
+Kubo|25|Meio-campista|7
+Goto|21|Atacante|0
+Doan|28|Meio-campista|11
+Maeda|28|Meio-campista|6
+Osako|26|Goleiro|0
+Nakamura|25|Meio-campista|12
+Ito|33|Meio-campista|16
+Kamada|29|Meio-campista|14
+Watanabe|29|Defensor|0
+Suzuki|24|Meio-campista|0
+Ueda|27|Atacante|18
+Ogawa|28|Atacante|11
+Seko|26|Defensor|0
+Ito|27|Defensor|1
+Tomiyasu|27|Defensor|1
+Hayakawa|27|Goleiro|0
+Sano|25|Meio-campista|0
+Suzuki|22|Defensor|0
+Shiogai|21|Atacante|0
+
+# Jordan (JOR)
+Yazeed Abulaila|33|Goleiro|0
+Mohammad Abuhasheesh|31|Defensor|1
+Abdallah Nasib|32|Defensor|2
+Husam Abudahab|26|Defensor|0
+Yazan Alarab|30|Defensor|3
+Amer Jamous|23|Meio-campista|1
+Mohammad Abuzraiq|28|Atacante|5
+Noor Alrawabdeh|29|Meio-campista|3
+Ali Olwan|26|Atacante|30
+Mousa Altamari|29|Atacante|25
+Odeh Fakhoury|20|Atacante|1
+Nour Baniateyah|33|Goleiro|0
+Mahmoud Almardi|32|Atacante|8
+Rajaei Ayed|32|Meio-campista|0
+Ibrahim Sadeh|26|Meio-campista|3
+Mohammad Abualnadi|25|Defensor|0
+Saleem Obaid|34|Defensor|0
+Mohammad Abughoush|20|Meio-campista|0
+Saed Alrosan|29|Defensor|2
+Mohannad Abutaha|23|Meio-campista|1
+Nizar Alrashdan|27|Meio-campista|5
+Abdallah Alfakhori|26|Goleiro|0
+Ehsan Haddad|32|Defensor|2
+Ali Azaizeh|22|Atacante|0
+Mohammad Aldaoud|34|Meio-campista|1
+Anas Badawi|28|Defensor|0
+
+# Korea Republic (KOR)
+Kim|35|Goleiro|0
+Lee|24|Defensor|0
+Lee|25|Meio-campista|0
+Kim|29|Defensor|4
+Kim|25|Defensor|0
+Hwang|29|Meio-campista|7
+Son|33|Atacante|56
+Paik|29|Meio-campista|3
+Cho|28|Atacante|12
+Lee|33|Meio-campista|15
+Hwang|30|Meio-campista|17
+Song|28|Goleiro|0
+Lee|23|Defensor|1
+Cho|24|Defensor|0
+Kim|30|Defensor|0
+Park|30|Defensor|1
+Bae|22|Meio-campista|2
+Oh|25|Atacante|7
+Lee|25|Meio-campista|10
+Yang|24|Meio-campista|0
+Jo|34|Goleiro|0
+Seol|27|Defensor|0
+Castrop|22|Defensor|0
+Kim|29|Meio-campista|3
+Eom|24|Meio-campista|2
+Lee|28|Meio-campista|4
+
+# Mexico (MEX)
+Rangel|26|Goleiro|0
+Sanchez|28|Defensor|3
+Montes|29|Defensor|4
+Alvarez|28|Defensor|7
+Vasquez|27|Defensor|3
+Lira|26|Meio-campista|0
+Romo|31|Meio-campista|5
+Fidalgo|29|Meio-campista|1
+Jimenez|35|Atacante|46
+Vega|28|Atacante|7
+Gimenez|25|Atacante|6
+Acevedo|30|Goleiro|0
+Ochoa|40|Goleiro|0
+Gonzalez|23|Atacante|1
+Reyes|26|Defensor|2
+Quinones|29|Atacante|4
+Pineda|30|Meio-campista|12
+Vargas|20|Meio-campista|0
+Mora|17|Meio-campista|0
+Chavez|22|Defensor|1
+Huerta|25|Atacante|3
+Martinez|31|Atacante|3
+Gallardo|31|Defensor|3
+Chavez|30|Meio-campista|5
+Alvarado|27|Atacante|5
+Gutierrez|23|Meio-campista|2
+
+# Morocco (MAR)
+Bounou|35|Goleiro|0
+Hakimi|27|Defensor|12
+Mazraoui|28|Defensor|2
+Amrabat|29|Meio-campista|0
+Saadane|34|Defensor|1
+Bouaddi|18|Meio-campista|0
+Talbi|21|Meio-campista|0
+Ounahi|26|Meio-campista|9
+Rahimi|30|Atacante|13
+Diaz|26|Atacante|15
+Saibari|25|Meio-campista|12
+El Kajoui|37|Goleiro|0
+El Ouahdi|24|Defensor|0
+Diop|29|Defensor|0
+El Mourabet|20|Meio-campista|0
+Yassine|20|Meio-campista|1
+Sbai|25|Atacante|0
+Riad|23|Defensor|1
+Belammari|27|Defensor|0
+El Kaabi|33|Atacante|36
+Amaimouni|21|Atacante|0
+Tagnaouti|30|Goleiro|0
+El Khannouss|22|Meio-campista|3
+El Aynaoui|24|Meio-campista|2
+Halhal|23|Defensor|0
+Salah Eddine|24|Defensor|0
+
+# Netherlands (NED)
+Verbruggen|23|Goleiro|0
+Geertruida|25|Defensor|0
+De Roon|35|Meio-campista|1
+Van Dijk|34|Defensor|13
+Ake|31|Defensor|5
+Van Hecke|26|Defensor|1
+Kluivert|27|Meio-campista|0
+Gravenberch|24|Meio-campista|1
+Weghorst|33|Atacante|14
+Depay|32|Atacante|55
+Gakpo|27|Atacante|23
+Wieffer|26|Defensor|1
+Roefs|23|Goleiro|0
+Reijnders|27|Meio-campista|7
+Van De Ven|25|Defensor|1
+Til|28|Meio-campista|1
+Lang|27|Atacante|3
+Malen|27|Atacante|13
+Brobbey|24|Atacante|4
+Koopmeiners|28|Meio-campista|3
+De Jong|29|Meio-campista|2
+Dumfries|30|Defensor|11
+Flekken|33|Goleiro|0
+Summerville|24|Atacante|2
+Hato|20|Defensor|0
+Timber|25|Meio-campista|1
+
+# New Zealand (NZL)
+Crocombe|32|Goleiro|0
+Payne|32|Defensor|3
+De Vries|31|Defensor|1
+Bindon|21|Defensor|2
+Boxall|37|Defensor|1
+Bell|27|Meio-campista|1
+Rogerson|28|Atacante|2
+Stamenic|24|Meio-campista|3
+Wood|34|Atacante|45
+Singh|27|Meio-campista|3
+Just|26|Meio-campista|12
+Paulsen|23|Goleiro|0
+Cacace|25|Defensor|1
+Rufer|30|Meio-campista|0
+Pijnaker|27|Defensor|0
+Surman|22|Defensor|3
+Barbarouses|36|Atacante|10
+Waine|25|Atacante|9
+Old|23|Meio-campista|2
+Randall|23|Atacante|2
+Woud|27|Goleiro|0
+Thomas|31|Meio-campista|3
+Elliot|26|Defensor|0
+Bayliss|23|Meio-campista|0
+Smith|36|Defensor|2
+
+# Norway (NOR)
+Nyland|35|Goleiro|0
+Thorsby|30|Meio-campista|0
+Ajer|28|Defensor|2
+Ostigard|26|Defensor|2
+Moller Wolfe|24|Defensor|1
+Berg|28|Meio-campista|0
+Sorloth|30|Atacante|26
+Berge|28|Meio-campista|1
+Haaland|25|Atacante|59
+Odegaard|27|Meio-campista|5
+Strand Larsen|26|Atacante|6
+Tangvik|23|Goleiro|0
+Selvik|28|Goleiro|0
+Aursnes|30|Meio-campista|1
+Bjorkan|27|Defensor|1
+Holmgren Pedersen|25|Defensor|1
+Heggem|27|Defensor|0
+Thorstvedt|27|Meio-campista|4
+Aasgaard|24|Meio-campista|6
+Nusa|21|Atacante|8
+Schjelderup|22|Meio-campista|1
+Bobb|22|Meio-campista|2
+Hauge|26|Meio-campista|1
+Langas|25|Defensor|0
+Falchener|23|Defensor|0
+Ryerson|28|Atacante|1
+
+# Panama (PAN)
+Mejia|35|Goleiro|0
+Blackman|28|Defensor|3
+Cordoba|25|Defensor|1
+Escobar|31|Defensor|4
+Farina|24|Defensor|0
+Martinez|29|Meio-campista|2
+Rodriguez|28|Meio-campista|8
+Carrasquilla|27|Meio-campista|3
+Rodriguez|27|Atacante|4
+Diaz|29|Meio-campista|17
+Barcenas|32|Meio-campista|10
+Samudio|32|Goleiro|0
+Ramos|29|Defensor|2
+Harvey|26|Defensor|3
+Davis|35|Defensor|9
+Andrade|27|Defensor|1
+Fajardo|32|Atacante|17
+Waterman|35|Atacante|15
+Quintero|38|Meio-campista|7
+Godoy|36|Meio-campista|4
+Yanis|30|Meio-campista|5
+Mosquera|31|Goleiro|0
+Murillo|30|Defensor|9
+Londono|25|Atacante|1
+Miller|34|Defensor|2
+Gutierrez|27|Defensor|0
+
+# Paraguay (PAR)
+Fernandez|38|Goleiro|0
+Velazquez|35|Defensor|1
+Alderete|29|Defensor|3
+Caceres|26|Defensor|0
+Balbuena|34|Defensor|2
+Alonso|33|Defensor|3
+Sosa|26|Meio-campista|1
+Gomez|23|Meio-campista|3
+Sanabria|30|Atacante|7
+Almiron|32|Meio-campista|10
+Mauricio|25|Meio-campista|1
+Gill|26|Goleiro|0
+Canale|29|Defensor|0
+Cubas|30|Meio-campista|0
+Gomez|33|Defensor|4
+Bobadilla|24|Meio-campista|1
+Romero Gamarra|31|Atacante|6
+Arce|31|Atacante|1
+Enciso|22|Atacante|4
+Ojeda|26|Meio-campista|0
+Avalos|34|Atacante|2
+Olveira|33|Goleiro|0
+Galarza|24|Meio-campista|4
+Caballero|24|Meio-campista|1
+Pitta|26|Atacante|0
+Maidana|20|Defensor|1
+
+# Portugal (POR)
+Diogo Costa|26|Goleiro|0
+Nelson Semedo|32|Defensor|0
+Ruben Dias|29|Defensor|3
+Tomas Araujo|24|Defensor|0
+Diogo Dalot|27|Defensor|3
+Matheus Nunes|27|Meio-campista|2
+Cristiano Ronaldo|41|Atacante|145
+Bruno Fernandes|31|Meio-campista|29
+Goncalo Ramos|25|Atacante|10
+Bernardo Silva|31|Meio-campista|14
+Joao Felix|26|Atacante|12
+Jose Sa|33|Goleiro|0
+Renato Veiga|22|Defensor|1
+Goncalo Inacio|24|Defensor|2
+Joao Neves|21|Meio-campista|4
+Francisco Trincao|26|Atacante|3
+Rafael Leao|27|Atacante|6
+Pedro Neto|26|Atacante|3
+Goncalo Guedes|29|Atacante|8
+Joao Cancelo|32|Defensor|12
+Ruben Neves|29|Meio-campista|1
+Rui Silva|32|Goleiro|0
+Vitinha|26|Meio-campista|0
+Samu Costa|25|Defensor|0
+Nuno Mendes|24|Defensor|2
+Francisco Conceicao|23|Atacante|4
+
+# Qatar (QAT)
+Mahmoud Abunada|26|Goleiro|0
+Pedro Miguel|35|Defensor|4
+Lucas Mendes|35|Defensor|2
+Issa Laye|28|Defensor|0
+Jassem Gaber|24|Defensor|1
+Abdulaziz Hatem|36|Meio-campista|11
+Ahmed Alaaeldin|33|Atacante|10
+Edmilson Junior|31|Atacante|0
+Mohammed Muntari|32|Atacante|17
+Hassan Alhaydos|35|Atacante|40
+Akram Afif|29|Atacante|40
+Karim Boudiaf|35|Meio-campista|6
+Ayoub Aloui|21|Defensor|0
+Homam Ahmed|26|Defensor|3
+Yusuf Abdurisag|26|Atacante|3
+Boualem Khoukhi|35|Defensor|21
+Ahmed Alganehi|25|Meio-campista|1
+Sultan Albrake|30|Defensor|0
+Almoez Ali|29|Atacante|58
+Ahmed Fathy|33|Meio-campista|0
+Salah Zakaria|27|Goleiro|0
+Meshaal Barsham|28|Goleiro|0
+Assim Madibo|29|Meio-campista|0
+Tahsin Mohammed|20|Atacante|0
+Alhashmi Alhussein|22|Defensor|0
+Mohamed Manai|23|Atacante|0
+
+# Saudi Arabia (KSA)
+Nawaf Alaqidi|26|Goleiro|0
+Ali Majrashi|26|Defensor|0
+Ali Lajami|30|Defensor|1
+Abdulelah Alamri|29|Defensor|2
+Hassan Altambakti|27|Defensor|1
+Nasser Aldawsari|27|Meio-campista|1
+Musab Aljuwayr|23|Meio-campista|6
+Aiman Yahya|25|Atacante|0
+Feras Albrikan|26|Atacante|16
+Salem Aldawsari|34|Atacante|27
+Saleh Alshehri|32|Atacante|17
+Saud Abdulhamid|26|Defensor|1
+Nawaf Bu Washl|26|Defensor|0
+Hassan Kadish|33|Defensor|2
+Abdullah Alkhaibari|29|Meio-campista|0
+Ziyad Aljohani|24|Meio-campista|0
+Khalid Alghannam|25|Atacante|0
+Ala Alhajji|30|Meio-campista|0
+Abdullah Alhamddan|26|Atacante|13
+Sultan Mandash|31|Atacante|2
+Mohammed Alowais|34|Goleiro|0
+Ahmed Alkassar|35|Goleiro|0
+Mohamed Kanno|31|Meio-campista|8
+Moteb Alharbi|26|Defensor|0
+Jehad Thikri|24|Defensor|0
+Mohammed Abu Alshamat|23|Defensor|0
+
+# Scotland (SCO)
+Gunn|30|Goleiro|0
+Hickey|24|Defensor|0
+Robertson|32|Defensor|4
+Hanley|34|Defensor|2
+Tierney|29|Defensor|2
+Fletcher|19|Meio-campista|0
+Dykes|30|Atacante|10
+Adams|29|Atacante|13
+Christie|31|Meio-campista|10
+Kelly|30|Goleiro|0
+Hendry|31|Defensor|3
+Stewart|29|Atacante|0
+Souttar|29|Defensor|2
+Hyam|30|Defensor|0
+Gannon-doak|20|Atacante|1
+Hirst|27|Atacante|1
+Ferguson|26|Meio-campista|1
+Shankland|30|Atacante|7
+Gordon|43|Goleiro|0
+Patterson|24|Defensor|1
+Ralston|27|Defensor|1
+Curtis|20|Atacante|1
+
+# Senegal (SEN)
+Diouf|26|Goleiro|0
+Sarr|20|Defensor|0
+Koulibaly|35|Defensor|2
+Seck|34|Defensor|4
+Gueye|36|Meio-campista|7
+Ciss|32|Meio-campista|0
+Diao|20|Atacante|0
+Camara|22|Meio-campista|7
+Dieng|26|Atacante|2
+Mane|34|Atacante|54
+Jackson|25|Atacante|8
+Ndiaye|30|Atacante|4
+Ndiaye|26|Atacante|5
+Jakobs|26|Defensor|0
+Diatta|27|Defensor|2
+Mendy|34|Goleiro|0
+Sarr|23|Meio-campista|4
+Sarr|28|Atacante|22
+Niakhate|30|Defensor|0
+Mbaye|18|Atacante|4
+Diarra|22|Meio-campista|5
+Ndiaye|18|Meio-campista|0
+Diaw|33|Goleiro|0
+Mendy|22|Defensor|0
+Diouf|21|Defensor|1
+Gueye|27|Meio-campista|8
+
+# South Africa (RSA)
+Williams|34|Goleiro|0
+Matuludi|27|Defensor|0
+Ndamane|22|Defensor|0
+Mokoena|29|Meio-campista|10
+Mbatha|26|Meio-campista|3
+Modiba|30|Defensor|3
+Appollis|24|Atacante|8
+Moremi|25|Atacante|1
+Foster|25|Atacante|10
+Mofokeng|21|Atacante|1
+Zwane|36|Meio-campista|12
+Maseko|22|Atacante|2
+Sithole|27|Meio-campista|1
+Mbokazi|20|Defensor|1
+Rayners|30|Atacante|5
+Chaine|29|Goleiro|0
+Makgopa|26|Atacante|6
+Kabini|22|Defensor|0
+Sibisi|30|Defensor|0
+Mudau|31|Defensor|1
+Okon|22|Defensor|1
+Goss|32|Goleiro|0
+Adams|25|Meio-campista|2
+Makhanya|22|Defensor|0
+Sebelebele|23|Atacante|1
+Cross|25|Defensor|0
+
+# Spain (ESP)
+Raya|30|Goleiro|0
+Pubill|23|Defensor|0
+Grimaldo|30|Defensor|0
+Garcia|25|Defensor|0
+Llorente|31|Defensor|0
+Merino|30|Meio-campista|10
+Torres|26|Atacante|24
+Ruiz|30|Meio-campista|6
+Gavi|21|Meio-campista|5
+Olmo|28|Atacante|12
+Pino|23|Atacante|4
+Porro|26|Defensor|0
+Garcia|25|Goleiro|0
+Laporte|32|Defensor|2
+Baena|24|Meio-campista|3
+Rodri|30|Meio-campista|4
+Williams|23|Atacante|6
+Zubimendi|27|Meio-campista|3
+Yamal|18|Atacante|7
+Pedri|23|Meio-campista|6
+Oyarzabal|29|Atacante|27
+Cubarsi|19|Defensor|0
+Simon|29|Goleiro|0
+Cucurella|27|Defensor|1
+Munoz|22|Atacante|1
+Iglesias|33|Atacante|0
+
+# Sweden (SWE)
+Widell Zetterstrom|27|Goleiro|0
+Lagerbielke|26|Defensor|2
+Lindelof|31|Defensor|3
+Hien|27|Defensor|0
+Gudmundsson|27|Defensor|0
+Johansson|28|Defensor|0
+Bergvall|20|Meio-campista|0
+Svensson|24|Defensor|0
+Isak|26|Atacante|18
+Nygren|24|Meio-campista|3
+Elanga|24|Atacante|8
+Johansson|27|Goleiro|0
+Sema|32|Meio-campista|5
+Ekdal|27|Defensor|0
+Starfelt|31|Defensor|0
+Karlstrom|31|Meio-campista|0
+Gyokeres|28|Atacante|21
+Ayari|22|Meio-campista|5
+Svanberg|27|Meio-campista|3
+Smith|29|Defensor|0
+Bernhardsson|27|Defensor|0
+Zeneli|23|Meio-campista|0
+Nordfeldt|37|Goleiro|0
+Stroud|24|Defensor|0
+Nilsson|29|Atacante|4
+Ali|27|Atacante|0
+
+# Switzerland (SUI)
+Kobel|28|Goleiro|0
+Muheim|28|Defensor|0
+Widmer|33|Defensor|5
+Elvedi|29|Defensor|3
+Akanji|30|Defensor|4
+Zakaria|29|Meio-campista|3
+Embolo|29|Atacante|25
+Freuler|34|Meio-campista|11
+Manzambi|20|Meio-campista|6
+Xhaka|33|Meio-campista|18
+Ndoye|25|Atacante|8
+Mvogo|32|Goleiro|0
+Rodriguez|33|Defensor|9
+Jashari|23|Meio-campista|0
+Sow|29|Meio-campista|0
+Fassnacht|32|Atacante|5
+Vargas|27|Atacante|13
+Coemert|28|Defensor|0
+Okafor|26|Atacante|2
+Aebischer|29|Meio-campista|2
+Keller|23|Goleiro|0
+Rieder|24|Meio-campista|1
+Amdouni|25|Atacante|11
+Amenda|22|Defensor|0
+Jaquez|23|Defensor|0
+Itten|29|Atacante|5
+
+# Tunisia (TUN)
+Chamakh|24|Goleiro|0
+Abdi|32|Defensor|7
+Talbi|28|Defensor|4
+Rekik|24|Defensor|1
+Arous|21|Defensor|0
+Bronn|31|Defensor|2
+Achouri|27|Atacante|5
+Saad|26|Atacante|3
+Mastouri|29|Atacante|5
+Mejbri|23|Meio-campista|1
+Gharbi|22|Meio-campista|2
+Ben Ouanes|31|Defensor|0
+Khedira|32|Meio-campista|0
+Ayari|21|Meio-campista|0
+Hadj Mahmoud|26|Meio-campista|0
+Dahmen|29|Goleiro|0
+Skhiri|31|Meio-campista|4
+Elloumi|18|Atacante|0
+Chaouat|30|Atacante|6
+Valery|27|Defensor|0
+Ben Hmida|30|Defensor|0
+Ben Hessen|30|Goleiro|0
+Neffati|21|Defensor|0
+Chikhaoui|22|Defensor|0
+Slimane|25|Meio-campista|4
+Tounekti|23|Meio-campista|1
+
+# Türkiye (TUR)
+Gunok|37|Goleiro|0
+Celik|29|Defensor|3
+Demiral|28|Defensor|6
+Soyuncu|30|Defensor|2
+Ozcan|28|Meio-campista|1
+Kokcu|25|Meio-campista|4
+Akturkoglu|27|Atacante|15
+Guler|21|Atacante|7
+Gul|21|Atacante|2
+Calhanoglu|32|Meio-campista|22
+Yildiz|21|Atacante|5
+Bayindir|28|Goleiro|0
+Elmali|25|Defensor|0
+Bardakci|31|Defensor|2
+Kabak|26|Defensor|2
+Yuksek|27|Meio-campista|1
+Kahveci|30|Atacante|6
+Muldur|27|Defensor|3
+Akgun|25|Atacante|4
+Kadioglu|26|Defensor|2
+Yilmaz|26|Atacante|5
+Ayhan|31|Meio-campista|6
+Cakir|30|Goleiro|0
+Aydin|25|Atacante|0
+Akaydin|32|Defensor|1
+Uzun|20|Atacante|1
+
+# Uruguay (URU)
+Rochet|33|Goleiro|0
+Gimenez|31|Defensor|8
+Caceres|26|Defensor|0
+Araujo|27|Defensor|1
+Ugarte|25|Meio-campista|1
+Bentancur|29|Meio-campista|3
+De La Cruz|29|Meio-campista|5
+Valverde|27|Meio-campista|9
+Nunez|27|Atacante|13
+De Arrascaeta|32|Meio-campista|13
+Pellistri|24|Atacante|2
+Mele|28|Goleiro|0
+Varela|33|Defensor|0
+Canobbio|27|Meio-campista|2
+Martinez|26|Meio-campista|0
+Olivera|28|Defensor|2
+Vina|28|Defensor|1
+Rodriguez|26|Atacante|4
+Aguirre|31|Atacante|3
+Araujo|26|Meio-campista|5
+Vinas|27|Atacante|2
+Piquerez|27|Meio-campista|0
+Muslera|40|Goleiro|0
+Bueno|27|Defensor|0
+Sanabria|26|Meio-campista|1
+Zalazar|26|Meio-campista|2
+
+# USA (USA)
+Turner|32|Goleiro|0
+Dest|25|Defensor|3
+Richards|26|Defensor|3
+Adams|27|Meio-campista|2
+Robinson|28|Defensor|5
+Trusty|27|Defensor|1
+Reyna|23|Meio-campista|10
+Pepi|23|Atacante|13
+Pulisic|27|Atacante|33
+Aaronson|25|Atacante|9
+Robinson|29|Defensor|3
+Ream|38|Defensor|1
+Berhalter|25|Meio-campista|2
+Roldan|31|Meio-campista|0
+Freeman|21|Defensor|3
+Tillman|24|Meio-campista|3
+Arfsten|25|Defensor|1
+Wright|28|Atacante|7
+Balogun|24|Atacante|11
+Weah|26|Atacante|7
+Scally|23|Defensor|0
+Freese|27|Goleiro|0
+Brady|22|Goleiro|0
+Zendejas|28|Atacante|2
+
+# Uzbekistan (UZB)
+Yusupov|35|Goleiro|0
+Khusanov|22|Defensor|0
+Alijonov|29|Defensor|3
+Sayfiev|35|Defensor|1
+Ashurmatov|29|Defensor|1
+Mozgovoy|27|Meio-campista|1
+Shukurov|30|Meio-campista|10
+Iskanderov|32|Meio-campista|4
+Xamrobekov|30|Meio-campista|1
+Jiyanov|25|Meio-campista|1
+Urunov|25|Meio-campista|10
+Nematov|25|Goleiro|0
+Nasrullaev|27|Defensor|2
+Shomurodov|30|Atacante|45
+Eshmurodov|33|Defensor|0
+Ergashev|31|Goleiro|0
+Khamdamov|29|Meio-campista|5
+Abdullaev|28|Defensor|0
+Ganiev|28|Meio-campista|0
+Amonov|28|Atacante|2
+Sergeev|33|Atacante|25
+Fayzullaev|22|Meio-campista|9
+Esanov|23|Meio-campista|0
+Karimov|18|Defensor|0
+Ulmasaliyev|26|Defensor|0
+Urozov|22|Defensor|1

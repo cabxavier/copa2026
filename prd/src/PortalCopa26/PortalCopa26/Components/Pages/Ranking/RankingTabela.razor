@@ -1,0 +1,64 @@
+<div class="rank-panel">
+    <div class="rank-top">
+        <div class="rt-title">@Titulo</div>
+        @Pesquisa
+    </div>
+    <table class="rtable">
+        <thead>
+            <tr>
+                <th class="num">#</th>
+                <th>Seleção</th>
+                <th class="pts">Pontuação FIFA</th>
+                <th class="grp">Grupo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Itens.Count == 0)
+            {
+                <tr>
+                    <td colspan="4" class="noresults">Nenhuma seleção encontrada.</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var item in Itens)
+                {
+                    <RankingLinha Item="item" LarguraBarra="Largura(item)" />
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    /// <summary>Seleções a exibir (já filtradas), ordenadas por posição.</summary>
+    [Parameter, EditorRequired]
+    public IReadOnlyList<RankingFifaItemDto> Itens { get; set; } = Array.Empty<RankingFifaItemDto>();
+
+    /// <summary>Maior pontuação do ranking completo, base de escala da barra decorativa.</summary>
+    [Parameter]
+    public decimal MaxPontuacao { get; set; }
+
+    /// <summary>Título do painel.</summary>
+    [Parameter]
+    public string Titulo { get; set; } = "Ranking completo — Participantes Copa 2026";
+
+    /// <summary>Slot opcional para o campo de pesquisa no cabeçalho do painel.</summary>
+    [Parameter]
+    public RenderFragment? Pesquisa { get; set; }
+
+    // Base apenas estética: dá contraste às barras (nenhum dado oficial).
+    private const decimal BasePontuacao = 1640m;
+
+    private int Largura(RankingFifaItemDto item)
+    {
+        var max = MaxPontuacao > BasePontuacao ? MaxPontuacao : item.Pontuacao;
+        if (max <= BasePontuacao)
+        {
+            return 100;
+        }
+
+        var pct = (double)((item.Pontuacao - BasePontuacao) / (max - BasePontuacao)) * 100;
+        return (int)Math.Clamp(pct, 8, 100);
+    }
+}

@@ -1,0 +1,102 @@
+@page "/grupos"
+@rendermode InteractiveServer
+@inject IGruposService Dados
+@inject NavigationManager Navegacao
+
+<PageTitle>Portal Copa26 — Grupos</PageTitle>
+
+<section class="page grupos">
+    <div class="page-head">
+        <div>
+            <h1>Grupos</h1>
+            <p class="sub">Copa do Mundo FIFA 2026 · 12 grupos</p>
+        </div>
+        <button type="button" class="btn-simular" @onclick="IrParaSimulador">⚽ Simular</button>
+    </div>
+
+    <div class="chips">
+        @foreach (var grupo in _grupos)
+        {
+            <button type="button"
+                    class="chip @(grupo.Id == _grupoSelecionadoId ? "active" : null)"
+                    @onclick="() => SelecionarGrupoAsync(grupo.Id, grupo.Nome)">
+                @grupo.Nome
+            </button>
+        }
+    </div>
+
+    <div class="two-col">
+        <div class="panel">
+            <div class="panel-head">
+                <h3>Jogos — @_grupoNome</h3>
+            </div>
+            <div class="glist">
+                @if (_jogos.Count == 0)
+                {
+                    <p class="sub">Nenhum jogo disponível para este grupo.</p>
+                }
+                else
+                {
+                    @foreach (var jogo in _jogos)
+                    {
+                        <GrupoJogoLinha Jogo="jogo" ResultadoSalvo="OnResultadoSalvoAsync" />
+                    }
+                }
+            </div>
+        </div>
+
+        <ClassificacaoGrupo Titulo="@($"Classificação — {_grupoNome}")"
+                            Linhas="_classificacao"
+                            GrupoNome="@_grupoNome"
+                            MostrarGolsProContra="true"
+                            MostrarEliminado="true"
+                            MostrarLegenda="false">
+            <Rodape>
+                <div class="legend">
+                    <span><i style="background:var(--green)"></i>Classificado (1º e 2º de cada grupo)</span>
+                    <span><i style="background:var(--orange)"></i>Melhor Terceiro (8 melhores avançam)</span>
+                    <span><i style="background:var(--muted2)"></i>Eliminado</span>
+                </div>
+            </Rodape>
+        </ClassificacaoGrupo>
+    </div>
+</section>
+
+@code {
+    private IReadOnlyList<GrupoOpcaoDto> _grupos = Array.Empty<GrupoOpcaoDto>();
+    private IReadOnlyList<SimuladorJogoDto> _jogos = Array.Empty<SimuladorJogoDto>();
+    private IReadOnlyList<ClassificacaoLinhaDto> _classificacao = Array.Empty<ClassificacaoLinhaDto>();
+    private int _grupoSelecionadoId;
+    private string _grupoNome = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _grupos = await Dados.ObterGruposAsync();
+        if (_grupos.Count > 0)
+        {
+            await SelecionarGrupoAsync(_grupos[0].Id, _grupos[0].Nome);
+        }
+    }
+
+    private async Task SelecionarGrupoAsync(int grupoId, string grupoNome)
+    {
+        _grupoSelecionadoId = grupoId;
+        _grupoNome = grupoNome;
+        await RecarregarGrupoAsync();
+    }
+
+    private async Task RecarregarGrupoAsync()
+    {
+        _jogos = await Dados.ObterJogosDoGrupoAsync(_grupoSelecionadoId);
+        _classificacao = await Dados.ObterClassificacaoAsync(_grupoSelecionadoId);
+    }
+
+    private async Task OnResultadoSalvoAsync(SimuladorJogoDto jogo)
+    {
+        // Persiste o resultado oficial e recalcula a classificação imediatamente.
+        await Dados.SalvarResultadoAsync(jogo.JogoId, jogo.GolsMandante, jogo.GolsVisitante);
+        await RecarregarGrupoAsync();
+    }
+
+    private void IrParaSimulador() => Navegacao.NavigateTo("/simulador");
+}

@@ -1,0 +1,14 @@
+<div class="day">
+    @Titulo
+    <span class="tag">@Quantidade @(Quantidade == 1 ? "JOGO" : "JOGOS")</span>
+</div>
+
+@code {
+    /// <summary>Texto do cabeçalho da seção (ex.: "Grupo A · Fase de grupos").</summary>
+    [Parameter, EditorRequired]
+    public string Titulo { get; set; } = string.Empty;
+
+    /// <summary>Quantidade de jogos na seção.</summary>
+    [Parameter, EditorRequired]
+    public int Quantidade { get; set; }
+}

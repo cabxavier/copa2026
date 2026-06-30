@@ -1,0 +1,21 @@
+<div class="rank-search">
+    <span class="ic">🔍</span>
+    <input type="text"
+           placeholder="Pesquisar seleção..."
+           autocomplete="off"
+           value="@Termo"
+           @oninput="OnInput" />
+</div>
+
+@code {
+    /// <summary>Texto atual da busca (controlado pela página).</summary>
+    [Parameter]
+    public string Termo { get; set; } = string.Empty;
+
+    /// <summary>Emite o texto de busca a cada digitação.</summary>
+    [Parameter]
+    public EventCallback<string> TermoChanged { get; set; }
+
+    private Task OnInput(ChangeEventArgs e) =>
+        TermoChanged.InvokeAsync(e.Value?.ToString() ?? string.Empty);
+}

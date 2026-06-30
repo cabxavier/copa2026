@@ -1,0 +1,101 @@
+Jogos da Primeira Fase da Copa do Mundo 2026
+
+Fase de grupos: 11 a 27 de junho de 2026.
+Cada grupo disputa 6 partidas (todos contra todos). Total: 72 jogos.
+Observacao: todos os horarios estao no fuso de Brasilia (UTC-3).
+
+GRUPO A
+11/06/2026 - 16h00 - México x África do Sul - Estádio Azteca, Cidade do México (abertura)
+11/06/2026 - 23h00 - Coreia do Sul x República Tcheca - Estadio Akron, Guadalajara
+18/06/2026 - 13h00 - República Tcheca x África do Sul - Mercedes-Benz Stadium, Atlanta
+19/06/2026 - 00h00 - México x Coreia do Sul - Estadio Akron, Guadalajara
+24/06/2026 - 22h00 - República Tcheca x México - Estádio Azteca, Cidade do México
+24/06/2026 - 22h00 - África do Sul x Coreia do Sul - Estadio BBVA, Monterrey
+
+GRUPO B
+12/06/2026 - 16h00 - Canadá x Bósnia e Herzegovina - BMO Field, Toronto
+13/06/2026 - 16h00 - Catar x Suíça - Levi's Stadium, São Francisco
+18/06/2026 - 16h00 - Suíça x Bósnia e Herzegovina - SoFi Stadium, Los Angeles
+18/06/2026 - 19h00 - Canadá x Catar - BC Place, Vancouver
+24/06/2026 - 16h00 - Suíça x Canadá - BC Place, Vancouver
+24/06/2026 - 16h00 - Bósnia e Herzegovina x Catar - Lumen Field, Seattle
+
+GRUPO C
+13/06/2026 - 19h00 - Brasil x Marrocos - MetLife Stadium, Nova Jersey
+13/06/2026 - 22h00 - Haiti x Escócia - Gillette Stadium, Boston
+19/06/2026 - 19h00 - Escócia x Marrocos - Gillette Stadium, Boston
+19/06/2026 - 22h00 - Brasil x Haiti - Lincoln Financial Field, Filadélfia
+24/06/2026 - 19h00 - Escócia x Brasil - Hard Rock Stadium, Miami
+24/06/2026 - 19h00 - Marrocos x Haiti - Mercedes-Benz Stadium, Atlanta
+
+GRUPO D
+12/06/2026 - 22h00 - Estados Unidos x Paraguai - SoFi Stadium, Los Angeles
+14/06/2026 - 01h00 - Austrália x Turquia - BC Place, Vancouver
+19/06/2026 - 16h00 - Estados Unidos x Austrália - Lumen Field, Seattle
+20/06/2026 - 01h00 - Turquia x Paraguai - Levi's Stadium, São Francisco
+25/06/2026 - 23h00 - Turquia x Estados Unidos - SoFi Stadium, Los Angeles
+25/06/2026 - 23h00 - Paraguai x Austrália - Levi's Stadium, São Francisco
+
+GRUPO E
+14/06/2026 - 14h00 - Alemanha x Curaçao - NRG Stadium, Houston
+14/06/2026 - 20h00 - Costa do Marfim x Equador - Lincoln Financial Field, Filadélfia
+20/06/2026 - 17h00 - Alemanha x Costa do Marfim - BMO Field, Toronto
+20/06/2026 - 21h00 - Equador x Curaçao - GEHA Field at Arrowhead, Kansas City
+25/06/2026 - 17h00 - Equador x Alemanha - MetLife Stadium, Nova Jersey
+25/06/2026 - 17h00 - Curaçao x Costa do Marfim - Lincoln Financial Field, Filadélfia
+
+GRUPO F
+14/06/2026 - 17h00 - Holanda x Japão - AT&T Stadium, Dallas
+14/06/2026 - 23h00 - Suécia x Tunísia - Estadio BBVA, Monterrey
+20/06/2026 - 14h00 - Holanda x Suécia - NRG Stadium, Houston
+21/06/2026 - 01h00 - Tunísia x Japão - Estadio BBVA, Monterrey
+25/06/2026 - 20h00 - Japão x Suécia - AT&T Stadium, Dallas
+25/06/2026 - 20h00 - Tunísia x Holanda - GEHA Field at Arrowhead, Kansas City
+
+GRUPO G
+15/06/2026 - 19h00 - Bélgica x Egito - Lumen Field, Seattle
+16/06/2026 - 01h00 - Irã x Nova Zelândia - SoFi Stadium, Los Angeles
+21/06/2026 - 16h00 - Bélgica x Irã - SoFi Stadium, Los Angeles
+21/06/2026 - 22h00 - Nova Zelândia x Egito - BC Place, Vancouver
+27/06/2026 - 00h00 - Egito x Irã - Lumen Field, Seattle
+27/06/2026 - 00h00 - Nova Zelândia x Bélgica - BC Place, Vancouver
+
+GRUPO H
+15/06/2026 - 13h00 - Espanha x Cabo Verde - Mercedes-Benz Stadium, Atlanta
+15/06/2026 - 19h00 - Arábia Saudita x Uruguai - Hard Rock Stadium, Miami
+21/06/2026 - 13h00 - Espanha x Arábia Saudita - Mercedes-Benz Stadium, Atlanta
+21/06/2026 - 19h00 - Uruguai x Cabo Verde - Hard Rock Stadium, Miami
+26/06/2026 - 21h00 - Cabo Verde x Arábia Saudita - NRG Stadium, Houston
+26/06/2026 - 21h00 - Uruguai x Espanha - Estadio Akron, Guadalajara
+
+GRUPO I
+16/06/2026 - 16h00 - França x Senegal - MetLife Stadium, Nova Jersey
+16/06/2026 - 19h00 - Iraque x Noruega - Gillette Stadium, Boston
+22/06/2026 - 18h00 - França x Iraque - Lincoln Financial Field, Filadélfia
+22/06/2026 - 21h00 - Noruega x Senegal - MetLife Stadium, Nova Jersey
+26/06/2026 - 16h00 - Noruega x França - Gillette Stadium, Boston
+26/06/2026 - 16h00 - Senegal x Iraque - BMO Field, Toronto
+
+GRUPO J
+16/06/2026 - 22h00 - Argentina x Argélia - GEHA Field at Arrowhead, Kansas City
+17/06/2026 - 01h00 - Áustria x Jordânia - Levi's Stadium, São Francisco
+22/06/2026 - 14h00 - Argentina x Áustria - AT&T Stadium, Dallas
+23/06/2026 - 00h00 - Jordânia x Argélia - Levi's Stadium, São Francisco
+27/06/2026 - 23h00 - Argélia x Áustria - GEHA Field at Arrowhead, Kansas City
+27/06/2026 - 23h00 - Jordânia x Argentina - AT&T Stadium, Dallas
+
+GRUPO K
+17/06/2026 - 14h00 - Portugal x RD Congo - NRG Stadium, Houston
+17/06/2026 - 23h00 - Uzbequistão x Colômbia - Estádio Azteca, Cidade do México
+23/06/2026 - 14h00 - Portugal x Uzbequistão - NRG Stadium, Houston
+23/06/2026 - 23h00 - Colômbia x RD Congo - Estadio Akron, Guadalajara
+27/06/2026 - 20h30 - Colômbia x Portugal - Hard Rock Stadium, Miami
+27/06/2026 - 20h30 - RD Congo x Uzbequistão - Mercedes-Benz Stadium, Atlanta
+
+GRUPO L
+17/06/2026 - 17h00 - Inglaterra x Croácia - AT&T Stadium, Dallas
+17/06/2026 - 20h00 - Gana x Panamá - BMO Field, Toronto
+23/06/2026 - 17h00 - Inglaterra x Gana - Gillette Stadium, Boston
+23/06/2026 - 20h00 - Panamá x Croácia - BMO Field, Toronto
+27/06/2026 - 18h00 - Panamá x Inglaterra - MetLife Stadium, Nova Jersey
+27/06/2026 - 18h00 - Croácia x Gana - Lincoln Financial Field, Filadélfia

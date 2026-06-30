@@ -1,0 +1,30 @@
+<div class="match">
+    <div class="team">
+        <img class="fl-img" src="@Jogo.MandanteBandeira" alt="@Jogo.MandanteNome" />
+        <div><b>@Jogo.MandanteNome</b></div>
+    </div>
+    <div class="center">
+        @if (Jogo.TemResultado)
+        {
+            <div class="status">ENCERRADO</div>
+            <div class="score">@Jogo.GolsMandante : @Jogo.GolsVisitante</div>
+        }
+        else
+        {
+            <div class="status">AGENDADO</div>
+            <div class="score">— : —</div>
+        }
+        <div class="meta"><span class="grp-tag">@Jogo.Data.ToString("HH:mm") @Jogo.GrupoNome</span></div>
+        <div class="meta">@Jogo.Estadio · @Jogo.Cidade</div>
+    </div>
+    <div class="team r">
+        <div><b>@Jogo.VisitanteNome</b></div>
+        <img class="fl-img" src="@Jogo.VisitanteBandeira" alt="@Jogo.VisitanteNome" />
+    </div>
+</div>
+
+@code {
+    /// <summary>Partida a ser exibida.</summary>
+    [Parameter, EditorRequired]
+    public JogoListaDto Jogo { get; set; } = default!;
+}

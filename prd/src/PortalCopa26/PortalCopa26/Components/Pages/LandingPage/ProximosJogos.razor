@@ -1,0 +1,65 @@
+@inject ILandingPageService Dados
+@using System.Globalization
+
+<div id="proximos-jogos" style="margin-top:46px">
+    <div class="panel-head"><div class="section-title">Próximos Jogos</div></div>
+
+    @if (_jogos.Count == 0)
+    {
+        <p class="sub">Nenhum jogo disponível.</p>
+    }
+    else
+    {
+        @foreach (var dia in _jogos.GroupBy(j => j.Data.Date))
+        {
+            <div class="day">
+                @CapitalizarData(dia.Key)
+                <span class="tag">@dia.Count() @(dia.Count() == 1 ? "JOGO" : "JOGOS")</span>
+            </div>
+            @foreach (var jogo in dia)
+            {
+                <div class="match">
+                    <div class="team">
+                        <img class="fl-img" src="@jogo.MandanteBandeira" alt="@jogo.MandanteNome" />
+                        <div><b>@jogo.MandanteNome</b></div>
+                    </div>
+                    <div class="center">
+                        @if (jogo.TemResultado)
+                        {
+                            <div class="status">ENCERRADO</div>
+                            <div class="score">@jogo.GolsMandante : @jogo.GolsVisitante</div>
+                        }
+                        else
+                        {
+                            <div class="status">PRÓXIMO</div>
+                            <div class="score">— : —</div>
+                        }
+                        <div class="meta"><span class="grp-tag">@jogo.Grupo</span></div>
+                        <div class="meta">@jogo.Estadio · @jogo.Cidade</div>
+                    </div>
+                    <div class="team r">
+                        <div><b>@jogo.VisitanteNome</b></div>
+                        <img class="fl-img" src="@jogo.VisitanteBandeira" alt="@jogo.VisitanteNome" />
+                    </div>
+                </div>
+            }
+        }
+    }
+</div>
+
+@code {
+    private IReadOnlyList<JogoResumoDto> _jogos = Array.Empty<JogoResumoDto>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _jogos = await Dados.ObterProximosJogosAsync(6);
+    }
+
+    private static readonly CultureInfo PtBr = CultureInfo.GetCultureInfo("pt-BR");
+
+    private static string CapitalizarData(DateTime data)
+    {
+        var texto = data.ToString("dddd, dd 'de' MMMM 'de' yyyy", PtBr);
+        return char.ToUpper(texto[0], PtBr) + texto[1..];
+    }
+}

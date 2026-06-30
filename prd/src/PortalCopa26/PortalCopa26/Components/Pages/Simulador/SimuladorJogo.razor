@@ -1,0 +1,70 @@
+@* Linha de um jogo do simulador: seleções (nome + bandeira) e entrada de placar. *@
+
+<div class="sim-match">
+    <div class="st">
+        <img class="fl-img" src="@Jogo.MandanteBandeira" alt="@Jogo.MandanteNome" />
+        <span>@Jogo.MandanteNome</span>
+    </div>
+    <div class="sim-inputs">
+        <input type="number" min="0" max="99" inputmode="numeric"
+               value="@_golsMandante"
+               @oninput="OnMandanteInput"
+               aria-label="Gols de @Jogo.MandanteNome" />
+        <s>:</s>
+        <input type="number" min="0" max="99" inputmode="numeric"
+               value="@_golsVisitante"
+               @oninput="OnVisitanteInput"
+               aria-label="Gols de @Jogo.VisitanteNome" />
+    </div>
+    <div class="st r">
+        <span>@Jogo.VisitanteNome</span>
+        <img class="fl-img" src="@Jogo.VisitanteBandeira" alt="@Jogo.VisitanteNome" />
+    </div>
+</div>
+
+@code {
+    /// <summary>Jogo exibido, com o placar simulado atual (nulo se não informado).</summary>
+    [Parameter, EditorRequired]
+    public SimuladorJogoDto Jogo { get; set; } = default!;
+
+    /// <summary>Emite o jogo com o placar atualizado a cada alteração.</summary>
+    [Parameter]
+    public EventCallback<SimuladorJogoDto> PlacarAlterado { get; set; }
+
+    private int? _golsMandante;
+    private int? _golsVisitante;
+
+    protected override void OnParametersSet()
+    {
+        _golsMandante = Jogo.GolsMandante;
+        _golsVisitante = Jogo.GolsVisitante;
+    }
+
+    private Task OnMandanteInput(ChangeEventArgs e)
+    {
+        _golsMandante = Normalizar(e.Value?.ToString());
+        return EmitirAsync();
+    }
+
+    private Task OnVisitanteInput(ChangeEventArgs e)
+    {
+        _golsVisitante = Normalizar(e.Value?.ToString());
+        return EmitirAsync();
+    }
+
+    // Aceita apenas inteiros não negativos; demais entradas viram nulo (campo vazio)
+    // e valores fora da faixa são limitados a 0..99.
+    private static int? Normalizar(string? valor)
+    {
+        if (string.IsNullOrWhiteSpace(valor)) return null;
+        if (!int.TryParse(valor, out var n)) return null;
+        return Math.Clamp(n, 0, 99);
+    }
+
+    private Task EmitirAsync() =>
+        PlacarAlterado.InvokeAsync(Jogo with
+        {
+            GolsMandante = _golsMandante,
+            GolsVisitante = _golsVisitante
+        });
+}

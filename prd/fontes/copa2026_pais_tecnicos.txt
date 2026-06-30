@@ -1,0 +1,48 @@
+Algeria (ALG)|Vladimir Petković
+Argentina (ARG)|Lionel Scaloni
+Australia (AUS)|Tony Popovic
+Austria (AUT)|Ralf Rangnick
+Belgium (BEL)|Rudi Garcia
+Bosnia And Herzegovina (BIH)|Sergej Barbarez
+Brazil (BRA)|Carlo Ancelotti
+Cabo Verde (CPV)|Pedro Leitão Brito
+Canada (CAN)|Jesse Marsch
+Colombia (COL)|Nestor Lorenzo
+Congo DR (COD)|Sebastien Desabre
+Côte D'Ivoire (CIV)|Emerse Fae
+Croatia (CRO)|Zlatko Dalić
+Curaçao (CUW)|Dick Advocaat
+Czechia (CZE)|Miroslav Koubek
+Ecuador (ECU)|Sebastian Beccacece
+Egypt (EGY)|Hossam Hassan
+England (ENG)|Thomas Tuchel
+France (FRA)|Didier Deschamps
+Germany (GER)|Julian Nagelsmann
+Ghana (GHA)|Carlos Brito Leal De Queiroz
+Haiti (HAI)|Sebastien Migné
+IR Iran (IRN)|Amir Ghalehnoy
+Iraq (IRQ)|Graham Arnold
+Japan (JPN)|Hajime Moriyasu
+Jordan (JOR)|Jamal Sellami
+Korea Republic (KOR)|Myungbo Hong
+Mexico (MEX)|Javier Aguirre Onaindia
+Morocco (MAR)|Mohamed Ouahbi
+Netherlands (NED)|Ronald Koeman
+New Zealand (NZL)|Darren Bazeley
+Norway (NOR)|Stale Solbakken
+Panama (PAN)|Thomas Christiansen Tarin
+Paraguay (PAR)|Gustavo Alfaro
+Portugal (POR)|Roberto Martínez Montoliu
+Qatar (QAT)|Julen Lopetegui Argote
+Saudi Arabia (KSA)|Georgios Donis
+Scotland (SCO)|Steve Clarke
+Senegal (SEN)|Pape Thiaw
+South Africa (RSA)|Hugo Broos
+Spain (ESP)|Luis De La Fuente Castillo
+Sweden (SWE)|Graham Potter
+Switzerland (SUI)|Murat Yakin
+Tunisia (TUN)|Herve Renard
+Türkiye (TUR)|Vincenzo Montella
+Uruguay (URU)|Marcelo Bielsa
+USA (USA)|Mauricio Pochettino Trossero
+Uzbekistan (UZB)|Fabio Cannavaro

@@ -1,0 +1,17 @@
+<div class="tcard" @onclick="Selecionar">
+    <div class="fl"><img class="fl-img" src="@Selecao.BandeiraUrl" alt="@Selecao.Nome" /></div>
+    <b>@Selecao.Nome</b>
+    <span>@Selecao.GrupoNome · <em>@Selecao.Codigo</em></span>
+</div>
+
+@code {
+    /// <summary>Seleção exibida no card.</summary>
+    [Parameter, EditorRequired]
+    public SelecaoCardDto Selecao { get; set; } = default!;
+
+    /// <summary>Emite o id da seleção ao clicar no card (abre o modal de elenco).</summary>
+    [Parameter]
+    public EventCallback<int> OnSelecionar { get; set; }
+
+    private Task Selecionar() => OnSelecionar.InvokeAsync(Selecao.Id);
+}

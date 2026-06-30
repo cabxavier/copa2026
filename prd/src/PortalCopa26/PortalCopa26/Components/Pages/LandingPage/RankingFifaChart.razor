@@ -1,0 +1,62 @@
+@inject ILandingPageService Dados
+@inject ChartInterop Charts
+@implements IAsyncDisposable
+
+<div id="ranking">
+    <div class="panel-head">
+        <div class="section-title" style="margin:0">Ranking FIFA</div>
+        <a href="ranking" class="btn btn-ghost" style="padding:8px 16px;font-size:13px">Ranking completo</a>
+    </div>
+    <div class="panel">
+        <div style="position:relative;height:360px">
+            <canvas id="@_canvasId"></canvas>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public int Top { get; set; } = 10;
+
+    private readonly string _canvasId = $"rankingFifaChart-{Guid.NewGuid():N}";
+    private IReadOnlyList<RankingItemDto> _ranking = Array.Empty<RankingItemDto>();
+    private bool _renderizado;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _ranking = await Dados.ObterRankingTopAsync(Top);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        // JSInterop só está disponível após o render no Blazor Server.
+        if (_renderizado || _ranking.Count == 0)
+        {
+            return;
+        }
+
+        _renderizado = true;
+        var labels = _ranking.Select(r => $"{r.Posicao}. {r.Selecao}");
+        var valores = _ranking.Select(r => r.Pontuacao);
+        // Paleta do protótipo: 1º ouro, 2º prata, 3º ouro, demais azul.
+        var cores = _ranking.Select((_, i) => i switch
+        {
+            0 => "#f5a623",
+            1 => "#c7d2e0",
+            2 => "#f5a623",
+            _ => "#3b82f6",
+        });
+        await Charts.RenderBarChartAsync(_canvasId, labels, valores, "Pontos", horizontal: true, cores: cores);
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        try
+        {
+            await Charts.DestroyChartAsync(_canvasId);
+        }
+        catch (JSDisconnectedException)
+        {
+            // Circuito já encerrado; nada a liberar.
+        }
+    }
+}

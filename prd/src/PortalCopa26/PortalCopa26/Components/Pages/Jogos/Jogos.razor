@@ -1,0 +1,58 @@
+@page "/jogos"
+@rendermode InteractiveServer
+@inject IJogosService Dados
+
+<PageTitle>Portal Copa26 — Jogos</PageTitle>
+
+<section class="page">
+    <div class="panel-head">
+        <div>
+            <h1>Jogos</h1>
+            <p class="sub">Fase de grupos · 72 partidas · 11 de junho a 27 de junho de 2026</p>
+        </div>
+        <a href="grupos" class="btn btn-ghost">Ver Grupos</a>
+    </div>
+
+    <JogosFiltro Grupos="_grupos"
+                 GrupoSelecionadoId="_grupoSelecionadoId"
+                 GrupoSelecionadoChanged="OnGrupoSelecionadoAsync" />
+
+    @if (_jogos.Count == 0)
+    {
+        <p class="sub">Nenhum jogo disponível.</p>
+    }
+    else
+    {
+        @foreach (var grupo in _jogos.GroupBy(j => j.GrupoNome).OrderBy(g => g.Key))
+        {
+            <JogosGrupoHeader Titulo="@($"{grupo.Key} · Fase de grupos")" Quantidade="grupo.Count()" />
+            @foreach (var jogo in grupo)
+            {
+                <JogoCard Jogo="jogo" />
+            }
+        }
+    }
+</section>
+
+@code {
+    private IReadOnlyList<GrupoOpcaoDto> _grupos = Array.Empty<GrupoOpcaoDto>();
+    private IReadOnlyList<JogoListaDto> _jogos = Array.Empty<JogoListaDto>();
+    private int? _grupoSelecionadoId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _grupos = await Dados.ObterGruposAsync();
+        await CarregarJogosAsync();
+    }
+
+    private async Task OnGrupoSelecionadoAsync(int? grupoId)
+    {
+        _grupoSelecionadoId = grupoId;
+        await CarregarJogosAsync();
+    }
+
+    private async Task CarregarJogosAsync()
+    {
+        _jogos = await Dados.ObterJogosAsync(_grupoSelecionadoId);
+    }
+}
